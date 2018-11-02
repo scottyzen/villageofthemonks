@@ -1,0 +1,548 @@
+@import fonts
+@import bootstrap
+@import ./scss/font-awesome
+@import facts
+@import responsive
+@import pages
+@import footer
+@import image-gallery
+@import weather
+@import animations
+@import hamburgers
+
+*
+  margin: 0
+  padding: 0
+  border: 0
+  list-style-type: none
+  text-decoration: (none !important)
+  img
+    max-width: 100%
+
+// Colors
+$yellow : #f1cf43
+$dark : #1d364a
+$green : #339933
+
+// Shadow
+$shadow : 0 12px 36px -4px rgba(30, 54, 72, .25)
+
+// Breakpoints    
+$mobile-width: 481px
+$tablet-width: 768px
+$laptop-width: 1025px
+$desktop-width: 1281px
+$ultra-wide-width: 1800px 
+
+=mobile
+  @media (min-width: #{$mobile-width}) 
+      @content
+
+=tablet
+  @media (min-width: #{$tablet-width}) 
+      @content
+
+=laptop
+  @media (min-width: #{$laptop-width}) 
+      @content
+
+=desktop
+  @media (min-width: #{$desktop-width}) 
+      @content
+
+=ultra-wide
+  @media (min-width: #{$ultra-wide-width}) 
+      @content
+
+*
+  transition: all 150ms linear
+.stop-scrolling
+  height: 100%
+  overflow: hidden
+
+// General
+body
+  font-family: 'Proxima Nova Rg', sans-serif
+  color: #56636d
+  font-size: 17px
+  line-height: 22px
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  min-width: 320px
+  &.no-scroll
+    overflow: hidden
+
+  h1, h2, h3
+    color: $dark
+    font-family: "rukolaregular"
+
+  p
+    a
+      font-family: 'Proxima Nova Bold', sans-serif
+
+  a 
+    color: $green
+    font-family: 'Proxima Nova Bold', sans-serif
+
+.main-btn
+	background-color: #64B372
+	color: (#fff !important)
+	font-family: 'festivo'
+	padding: 8px 16px
+	line-height: 1
+	box-shadow: 0 12px 18px -6px rgba(85, 237, 153, .6)
+	border-radius: 3px
+	display: inline-block
+	transition: all 200ms ease
+	&:hover, &:active, &:visited
+		background-color: adjust-hue(lighten($green, 5%), 15%)
+		color: (#fff !important)
+	&:active
+		box-shadow: 0 1px 1px #2eb068
+		transform: translateY(4px)
+
+
+.wrapper
+    @extend .container-fluid
+    background: url('https://scottyzen.sirv.com/Images/v/body-bg.png') repeat
+    padding: 0
+    margin: 0
+    position: relative
+    .bottom-brush-stroke
+        width: 100%
+        position: absolute
+        bottom: -227px
+        left: 0
+        height: 227px
+        background: url('https://scottyzen.sirv.com/Images/v/brush-strokes-dark.png') no-repeat top center
+    .start
+        margin-top: -50px
+    .header
+        overflow: (hidden !important)
+        z-index: (999 !important)
+        transition: none
+        background: url('https://scottyzen.sirv.com/Images/v/brush-strokes2.png') no-repeat center, url('https://scottyzen.sirv.com/Images/v/main-header.jpg') no-repeat center
+        background-size: 101%, 200%
+        background-position: 0% calc(100% + 1px), top
+        border-top: 100px solid #ffffff
+        margin-top: -100px
+        height: calc(35vh + 50vw)
+        padding-top: 50px
+        +tablet 
+            background-size: 100%, 160%
+        +laptop
+            height: calc(35vh + 35vw)
+            background-size: 100%, cover
+        .row
+            overflow: (hidden !important)
+            z-index: (999 !important)
+            .logo
+                @extend .col-xs-4, .col-xs-offset-1, .col-sm-5, .col-sm-offset-0
+                position: relative
+                font-family: 'Proxima Nova Rg'
+                h1
+                    width: 30px
+                    height: 60px
+                    margin-top: -0px
+                    text-indent: -9999px
+                    background: url('https://scottyzen.sirv.com/Images/v/logo.min.png') no-repeat
+                    background-size: contain
+                span
+                    position: absolute
+                    top: 15px
+                    left: 55px
+                    color: #fff
+                    display: block
+                    text-align: left
+                    line-height: 14px
+                    font-size: 16px
+            nav
+                @extend .col-xs-6, .col-sm-offset-1, .col-sm-6
+                padding: 10px 0 0
+                color: #fff
+                z-index: (999 !important)
+                ul
+                    list-style-type: none
+                    display: flex
+                    flex-direction: row
+                    justify-content: flex-end
+                    i
+                        font-size: 25px
+                    a
+                        color: #fff 
+
+            .show_menu
+                display: (block !important)
+
+            .menu_dropdown
+                display: none
+                position: absolute
+                top: 0
+                left: 0
+                animation: slide-in 300ms
+                font-family: 'Proxima Nova Rg'
+                width: 100%
+                z-index: (9999 !important)
+                #close_menu
+                    float: right
+                    color: $dark
+                    font-size: 40px
+                    padding: 10px
+                    cursor: pointer
+                ul
+                    display: block
+                    float: right
+                    padding: 50px 35px
+                    background-color: #fff
+                    font-weight: 400
+                    color: $dark
+                    box-shadow: $shadow
+                    z-index: (9999 !important)
+                    li
+                        float: left
+                        width: 100%
+                        margin: 10px 0
+                        a 
+                            color: $dark
+                            padding: 6px 10px
+                            transition: none
+                        a:hover
+                            color: #fff
+                            background-color: $green
+                    hr 
+                        height: 2px
+                        background: #f3f3f3
+                        border: none
+                        margin: 10px 0
+
+.container
+  max-width: 950px
+  p
+    padding: 20px 0
+
+.section-title
+  background: url('https://scottyzen.sirv.com/Images/v/section-title-brush-4.png') no-repeat
+  background-position: left bottom
+  background-size: contain
+  display: inline-block
+  text-align: center
+  width: 100%
+  margin-bottom: 24px
+  h1 
+    margin-top: 5px
+  small
+    font-family: 'festivo'
+    font-size: 16px
+    margin-top: 25px
+    color: transparentize($green, .25)
+  .lgfont
+    font-size: 4.5rem
+    padding-bottom: 10px
+
+// First landing 
+.start
+  .intro
+    @extend .col-xs-10, .col-xs-offset-1, .col-sm-5, .col-sm-offset-0
+    z-index: (0 !important)
+    h1
+      font-size: 48px
+      line-height: 40px
+  .first-image
+    @extend .col-xs-10, .col-xs-offset-1, .col-sm-6, .col-sm-offset-1
+    img
+      width: 100%
+      box-shadow: $shadow
+
+.full-width
+  display: block
+  float: left
+  width: 100%
+
+.green-river
+  background-image: url('https://scottyzen.sirv.com/Images/v/green-river.png')
+  background-position: center
+  p
+    @extend .col-xs-10, .col-xs-offset-1, .col-sm-6, .col-sm-offset-6
+    text-align: center
+    font-family: 'festivo'
+    color: #fff
+    line-height: 32px
+  #green-river-text
+    font-size: 1.3em
+    padding-top: 100px
+    padding-bottom: 100px
+
+.brandon-hiking
+  background: url('https://scottyzen.sirv.com/Images/v/brandon-full-width.png') no-repeat top
+  background-size: cover
+  min-height: 600px
+  img
+    @extend .col-sm-5
+  .info
+    @extend .col-sm-6, .col-sm-offset-3
+    color: #fff
+    text-align: center
+    margin-top: 150px
+    p
+      font-family: 'festivo'
+      color: #fff
+      line-height: 32px
+    h2
+      color: #fff
+      font-size: 3em
+
+.trail
+  margin-bottom: 100px
+  .section-title
+    background-position: center
+  span
+    margin: 50px 0
+  ul
+    display: flex
+    align-content: space-between
+    li
+      flex: 1
+  strong
+    font-family: 'festivo'
+    color: tomato
+  p
+    strong
+      color: inherit
+      font-size: 1.2em
+  a
+    border: 2px solid tomato
+    display: inline-block
+    padding: 4%
+    i
+      margin: 2px 10px 0 5px
+
+
+// Sights
+.splash
+  padding-top: 100px
+  .row
+    background-size: 80%
+    background-position: left
+    background-repeat: no-repeat
+  p  
+    text-align: left
+    margin-bottom: 8%
+    padding: 0
+  h2
+    font-size: 36px
+  #brandon
+    background-image: url('https://scottyzen.sirv.com/Images/v/brandon-splash.png')
+  #duiske
+    background-image: url('https://scottyzen.sirv.com/Images/v/duiske-splash.png')
+    background-position: right
+    .section-title
+      background: url('https://scottyzen.sirv.com/Images/v/section-title-brush-2.png') no-repeat
+      background-position: left bottom
+      background-size: contain
+  #tinnahinch-castle
+    background-image: url('https://scottyzen.sirv.com/Images/v/tinnahinch-castle-splash.png')
+  #riverbarrow
+    background-image: url('https://scottyzen.sirv.com/Images/v/river-splash.png')
+    background-position: right
+    .section-title
+      background: url('https://scottyzen.sirv.com/Images/v/section-title-brush-2.png') no-repeat
+      background-position: left bottom
+      background-size: contain
+  .med-info
+    background-color: #fff
+    box-shadow: $shadow
+    padding: 2.5% 5% 5%
+    margin-top: 60px
+    margin-bottom: 140px
+    border-radius: 3px
+    text-align: right
+  .left
+    @extend .col-xs-10, .col-xs-offset-1, .col-sm-6
+  .right
+    @extend .col-xs-10, .col-xs-offset-1, .col-sm-6, .col-sm-offset-6
+  .small-info
+    .thumbnail
+      padding: 0
+      @extend .col-xs-5, .col-xs-offset-0, .col-sm-5, .col-sm-offset-0
+      background-size: contain
+      background-position: top
+      background-repeat: no-repeat
+      padding-top: 25px
+      .info
+        background-color: #fff
+        box-shadow: $shadow
+        margin-top: -20px
+        padding: 10%
+    #riverbarrow
+      @extend .col-xs-offset-1
+      background-image: url('https://scottyzen.sirv.com/Images/v/river-splash.png')
+      .section-title
+        background: url('https://scottyzen.sirv.com/Images/v/section-title-brush-1.png') no-repeat
+        background-position: left bottom
+        background-size: contain
+    #silairewood
+      @extend .col-xs-offset-1
+      background-image: url('https://scottyzen.sirv.com/Images/v/silairewood-splash.png')
+
+
+// Instagram feed for Graig-feed
+.graig-feed
+  text-align: right
+  overflow: hidden
+  margin-top: 5%
+  span
+    background-position: center
+  ul.instafeed
+    margin: 10px 0
+    display: inline-block
+    line-height: 0
+    column-gap: 0
+    overflow: hidden
+    // column-count: 4 changed in _responseive.sass
+    li
+      // display: block
+      height: (100% !important)
+      width: (auto !important)
+      a
+        img
+          max-width: 100%
+  .fa-info-circle
+    padding: (6px!important)
+    margin-bottom: 20px
+    cursor: pointer
+
+// Tooltip
+.tooltip
+  text-shadow: 0 -1px 0 transparentize(#fff, .75)
+  opacity: 0
+  display: inline-block
+  box-shadow: 0 0 1px rgba(1, 1, 1, 0.3), 0 1px 2px rgba(1, 1, 1, 0.25), 0 1px 3px rgba(1, 1, 1, 0.25)
+  padding: (10px!important)
+  margin: 0 10px
+  border-radius: 2px
+  background: #d5ead5
+  font-size: .875em
+  max-width: 400px
+
+// Animations
+.spin
+  transform: rotate(45deg)
+
+
+// upload images
+.show-uploads
+  display: inline-block
+  div
+    width: 250px
+    margin: 25px
+    float: left
+
+.overlay
+  position: fixed
+  display: none
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: transparentize(#111, .125)
+
+.upload-form
+  display: none
+  span, label
+    margin: 0
+    padding: 0
+  form
+    width: 50%
+    height: 60%
+    background: #fff
+    box-shadow: $shadow
+    border-radius: 3px
+    position: fixed
+    top: 20%
+    left: 25%
+    padding: 1% 3% 3%
+    z-index: 1000
+    input
+      background-color: #f1f1f1
+      padding: 10px
+      border-radius: 3px
+      border: 1px solid #1d364a
+      &[type="file"]
+        opacity: 0
+    textarea
+      width: 100%
+      background-color: #f1f1f1
+      padding: 10px
+      border-radius: 3px
+      border: 1px solid #1d364a
+    button
+      border: 2px solid transparentize(#339933, .25)
+      color: #339933
+      display: inline
+      padding: 3% 4%
+      background: #fff
+      i
+        margin: 2px 10px 0 5px
+  .form-group-buttons
+    text-align: center
+  #cancel
+    border: none
+    background: none
+    padding: 5px 5px 20px 20px
+    position: absolute
+    top: 0
+    right: 0
+    font-size: 200%
+    color: #ccc
+
+.fileContainer
+  overflow: hidden
+  width: 100%
+  background-color: #f1f1f1
+  text-align: right
+  position: relative
+  border-radius: 3px
+  border: 1px solid #1d364a
+  p
+    margin: (0!important)
+    padding: 10px
+    text-align: left
+    display: block
+    float: left
+  span
+    display: inline-block
+    padding: 10px 20px
+    background-color: lighten(#1d364a, 25%)
+    color: #fff
+    border-left: 1px solid #1d364a
+  [type=file]
+    cursor: pointer
+    display: block
+    font-size: 999px
+    filter: alpha(opacity = 0)
+    min-height: 100%
+    min-width: 100%
+    opacity: 0
+    position: absolute
+    right: 0
+    text-align: right
+    top: 0
+
+.italic
+    font-style: (italic !important)
+
+.max-w-sm
+    max-width: 600px
+    margin: auto
+
+.pb-8
+    padding-bottom: 8rem
+
+.author
+    margin: 3rem 0
+    text-align: right
+    font-weight: bold
+    &::before
+        content: "-------------------"
+        margin-right: 15px
+        letter-spacing: -4px

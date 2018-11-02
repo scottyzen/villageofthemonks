@@ -1,0 +1,88 @@
+// Breakpoints    
+$mobile-width: 481px
+$tablet-width: 768px
+$laptop-width: 1025px
+$desktop-width: 1281px
+$ultra-wide-width: 1800px 
+
+=mobile
+  @media (min-width: #{$mobile-width}) 
+      @content
+
+=tablet
+  @media (min-width: #{$tablet-width}) 
+      @content
+
+=laptop
+  @media (min-width: #{$laptop-width}) 
+      @content
+
+=desktop
+  @media (min-width: #{$desktop-width}) 
+      @content
+
+=ultra-wide
+  @media (min-width: #{$ultra-wide-width}) 
+      @content
+    
+    
+#brandonhill-header
+  background: url('https://scottyzen.sirv.com/Images/v/brush-strokes.png') no-repeat center, url('https://scottyzen.sirv.com/Images/v/brandon-header.jpg') no-repeat center
+  background-position: 0% 102%, bottom
+  background-size: 100% auto, cover
+  height: calc(30vh + 60vw)
+  margin-bottom: 20px
+  +tablet
+    height: calc(30vh + 40vw)  
+  +laptop
+    height: calc(30vh + 30vw)
+    margin-bottom: 50px
+.freneys-well
+  img
+    max-width: 100%
+
+#duiskeabbey-header
+  background: url('https://scottyzen.sirv.com/Images/v/brush-strokes3.png') no-repeat center, url('https://scottyzen.sirv.com/Images/v/duiske5.jpg') no-repeat center
+  background-position: 0% 102%, bottom
+  background-size: 100% auto, cover
+  height: calc(30vh + 75vw)
+  margin-bottom: 20px
+  .hamburger-inner
+      box-shadow: 0 1px 2px rgba(1,1,1,0.35)
+      &::before, &::after
+          box-shadow: 0 1px 2px rgba(1,1,1,0.35)
+  +tablet
+    height: calc(30vh + 50vw)  
+  +laptop
+    height: calc(30vh + 30vw)
+    margin-bottom: 50px
+.history
+  margin-top: 20%
+
+#tinnahinchcastle-header
+  background: url('https://scottyzen.sirv.com/Images/v/brush-strokes3.png') no-repeat center, url('https://scottyzen.sirv.com/Images/v/tinnahinch-castle-header.jpg') no-repeat left
+  background-position: 0% 102%, top
+  background-size: 100% auto, cover
+  height: calc(30vh + 45vw)
+  margin-bottom: 20px
+  .hamburger-inner
+      box-shadow: 0 1px 2px rgba(1,1,1,0.35)
+      &::before, &::after
+          box-shadow: 0 1px 2px rgba(1,1,1,0.35)
+  +tablet
+    height: calc(30vh + 35vw)
+  +laptop
+    height: calc(30vh + 30vw)
+    background-size: 100%, cover
+    margin-bottom: 50px
+
+#riverbarrow-header
+  background: url('https://scottyzen.sirv.com/Images/v/brush-strokes3.png') no-repeat center, url('https://scottyzen.sirv.com/Images/v/river-barrow-header.jpg') no-repeat left
+  background-position: 0% 102%, bottom
+  background-size: 100% auto, cover
+  height: calc(30vh + 55vw)
+  margin-bottom: 50px
+  +tablet 
+    height: calc(30vh + 35vw)
+  +laptop
+    height: calc(28vh + 28vw)

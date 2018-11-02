@@ -1,0 +1,1 @@
+const gulp=require("gulp"),htmlmin=require("gulp-htmlmin"),phpMinify=require("@aquafadas/gulp-php-minify").phpMinify;gulp.task("phpmin",function(){return gulp.src(["*.html","*.php"]).pipe(htmlmin({collapseWhitespace:!0})).pipe(gulp.dest("./dist"))}),gulp.task("default",["phpmin"]);
