@@ -1,5 +1,8 @@
 .DS_Store
 node_modules
+PSD
+sass
+uploads
 
 # local env files
 .env.local
