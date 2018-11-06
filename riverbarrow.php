@@ -73,7 +73,7 @@
 
           </ul>
 
-          <div class="col-sm-3 col-sm-offset-1">
+          <div class="upload-button-wrapper">
             <p>Have you walk by the River Barrow? We would love to see your photos.
             <br>
             <a class="main-btn submit-photo">Upload Photo</a></p>

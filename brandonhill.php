@@ -56,7 +56,9 @@
           <p>A challenging walk from Graiguenamanagh along country roadways , forestry tracks and hillside paths to the highest point in County Kilkenny</p>
           <a href="brandon-hill-loop.pdf">
             <span>
-              <strong><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download Trail Map</strong>
+              <strong><i>
+                <svg width="22" height="22" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1596 476q14 14 28 36h-472v-472q22 14 36 28zm-476 164h544v1056q0 40-28 68t-68 28h-1344q-40 0-68-28t-28-68v-1600q0-40 28-68t68-28h800v544q0 40 28 68t68 28zm160 736v-64q0-14-9-23t-23-9h-704q-14 0-23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-704q-14 0-23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-704q-14 0-23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23-9t9-23z" fill="#FE644D"/></svg>
+              </i> Download Trail Map</strong>
             </span>
           </a>
         </div>
@@ -97,7 +99,7 @@
 
           </ul>
 
-          <div class="col-sm-3 col-sm-offset-1">
+          <div class="upload-button-wrapper">
             <p>Made the climb up Brandon? We would love to see some of the photos you have taking.
             <br>
             <a class="main-btn submit-photo">Upload Photo</a></p>

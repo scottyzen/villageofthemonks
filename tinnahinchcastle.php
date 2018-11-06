@@ -67,7 +67,7 @@
             ?>
           </ul>
 
-          <div class="col-sm-3 col-sm-offset-1">
+          <div class="upload-button-wrapper">
             <p>We would love to see more photos of Tinnahinch Castle.
             <br>
             <a class="main-btn submit-photo">Upload Photo</a></p>
