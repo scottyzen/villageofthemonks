@@ -1,21 +1,30 @@
 <?php
 function gallery($tagName) {
 
-  $db = mysqli_connect("mysql2269int.cp.blacknight.com","u1204067_scott","fUyp<a+Byh1D>(IK","db1204067_villageofthemonks");
-  $sql = "SELECT * FROM  `uploads` LIMIT 0 , 90";
-  $result = mysqli_query($db, $sql);
+    $whitelist = array(
+        '127.0.0.1',
+        '::1'
+    );
 
-  while ($row = mysqli_fetch_array($result)) {
-    // Check if image is has been varifided
-    if ($row['tag'] == $tagName) {
-      echo '<li>';
-        echo '<a>';
-          echo '<img src="uploads/'.$row['image'].'" alt="'.$row['text'].'" user="'.$row['name'].'">';
-        echo '</a>';
-      echo '</li>';
+    // Check if running on development server
+    if (in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
+        echo "Development server. Boom!";
+    } else {
+        $db = mysqli_connect("mysql2269int.cp.blacknight.com","u1204067_scott","fUyp<a+Byh1D>(IK","db1204067_villageofthemonks");
+        $sql = "SELECT * FROM  `uploads` LIMIT 0 , 90";
+        $result = mysqli_query($db, $sql);
+
+        while ($row = mysqli_fetch_array($result)) {
+            // Check if image is has been varifided
+            if ($row['tag'] == $tagName) {
+            echo '<li>';
+                echo '<a>';
+                echo '<img src="uploads/'.$row['image'].'" alt="'.$row['text'].'" user="'.$row['name'].'">';
+                echo '</a>';
+            echo '</li>';
+            }
+        }
     }
-  }
-
 };
 
 function imageUploadForm($formName){

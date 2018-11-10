@@ -1,3 +1,4 @@
+<?php ob_start("ob_gzhandler"); ?>
 <?php include 'uploads.php'; ?>
 <?php 
   $title = 'River Barrow';
@@ -13,7 +14,7 @@
         <div class="row">
 
           <!-- Navigation -->
-          <?php include '_navigation.php'; ?>
+          <?php $onPage = 'River Barrow'; include '_navigation.php'; ?>
 
         </div>
       </div>
@@ -62,8 +63,8 @@
       <div class="container">
         <div class="row">
           <span class="section-title full-width">
-            <h1 class="display-3">Images taken of the River Barrow</h1>
-          </span>
+          <h3 class="display-3"><small>Images of the</small><br>River Barrow</h3>
+        </span>
           <ul>
             <!-- Display images that have been uploaded -->
             <?php

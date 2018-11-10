@@ -1,4 +1,4 @@
-<?php 
+<?php ob_start("ob_gzhandler"); ?> <?php 
   $title = 'The Deserted Village';
   $image = 'https://scottyzen.sirv.com/Images/v/tinnahinch-castle-header.jpg';
   $description = 'The Deserted Village is a poem about Tinnahinch. Written by Eddie Power.';

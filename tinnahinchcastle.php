@@ -1,3 +1,4 @@
+<?php ob_start("ob_gzhandler"); ?>
 <?php include 'uploads.php'; ?>
 <?php 
   $title = 'Tinnahinch Castle';
@@ -13,8 +14,7 @@
         <div class="row">
 
           <!-- Navigation -->
-          <?php include '_navigation.php'; ?>
-
+          <?php $onPage = 'Tinnahinch Castle'; include '_navigation.php'; ?>
         </div>
       </div>
     </div>
@@ -56,9 +56,9 @@
     <div class="image-gallery full-width">
       <div class="container">
         <div class="row">
-          <span class="section-title full-width">
-            <h1 class="display-3">Images taken of Tinnahinch Castle</h1>
-          </span>
+            <span class="section-title full-width">
+                <h3 class="display-3"><small>Images of </small><br>Tinnahinch Castle</h3>
+            </span>
           <ul>
             <!-- Display images that have been uploaded -->
             <?php

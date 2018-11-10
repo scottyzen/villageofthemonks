@@ -1,10 +1,8 @@
-$fontColor : #fff
-$green : #339933
-
-
 footer
 	width: 100%
-	padding: 20px 
+	padding: 70px 20px 20px
+	+tablet
+		padding: 20px
 	font-size: .9em
 	background: url('https://scottyzen.sirv.com/Images/v/brush-strokes-dark.png') no-repeat top , url('https://scottyzen.sirv.com/Images/v/pattern-dark-bg.png')
 	background-size: 100% 220px, auto
@@ -33,11 +31,15 @@ footer
 		padding: 20px 0
 		color: darken($fontColor, 50%)
 		font-size: 1em
-		margin-bottom: 40px
+		margin: 10px 0 0 0
+		+tablet
+			margin: 0 0 40px 0
+		justify-content: center
 		p
+			padding: 0 40px
 			flex: 1
-			@media (min-width: 768px)
-                padding-left: 40px
+			+tablet
+                padding: 0 0 0 40px
                 text-align: right
 		a
 			color: #ccc
@@ -46,8 +48,8 @@ footer
 				font-family: 'Proxima Nova Bold'
 		span 
 			margin: 0 10px
-			width: 100%
-			@media (min-width: 768px)
+			margin-top: 20px
+			+tablet
 				width: auto
 
 		.logo-footer

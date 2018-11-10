@@ -1,3 +1,4 @@
+<?php ob_start("ob_gzhandler"); ?>
 <?php 
   $title = 'The Deserted Village';
   $image = 'https://scottyzen.sirv.com/Images/v/tinnahinch-castle-header.jpg';

@@ -1,4 +1,5 @@
-<?php $title = 'Village of the Monks | Graiguenamanagh'; include '_header.php'; ?>
+<?php ob_start("ob_gzhandler"); ?>
+<?php $title = 'Graiguenamanagh'; include '_header.php'; ?>
 
   <div class="wrapper">
     <!-- Header Image -->
@@ -7,7 +8,7 @@
         <div class="row">
 
           <!-- Navigation -->
-          <?php include '_navigation.php'; ?>
+          <?php $onPage = 'Home'; include '_navigation.php'; ?>
 
         </div>
       </div>
@@ -50,7 +51,7 @@
 
         <!-- View of Graig from the Air -->
         <div class="first-image">
-          <img id="top-image" src="https://scottyzen.sirv.com/Images/v/graig-air.jpg" alt="View of Graiguenamanagh from the air">
+          <img id="top-image" src="https://scottyzen.sirv.com/Images/v/graig-air.jpg" alt="View of Graiguenamanagh from the air" title="View of Graiguenamanagh from the air">
           <p>Graiguenamanagh expanded beyond the Abbey as a market town, aided by the development of the Grand Canal and the navigation of the <a href="riverbarrow.php">River Barrow</a>, which ultimately connected the town with Dublin, New Ross, Waterford and Carlow. The production of wool was historically important to the town’s economy and sheep rearing remains a predominant agricultural activity in the hinterland.</p>
         </div>
       </div> <!-- end row -->

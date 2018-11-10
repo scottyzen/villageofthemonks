@@ -1,3 +1,4 @@
+<?php ob_start("ob_gzhandler"); ?>
 <?php include 'uploads.php'; ?>
 <?php 
   $title = 'Brandon Hill';
@@ -12,7 +13,7 @@
         <div class="row">
 
           <!-- Navigation -->
-          <?php include '_navigation.php'; ?>
+          <?php $onPage = 'Brandon Hill'; include '_navigation.php'; ?>
 
         </div>
       </div>
@@ -56,9 +57,9 @@
           <p>A challenging walk from Graiguenamanagh along country roadways , forestry tracks and hillside paths to the highest point in County Kilkenny</p>
           <a href="brandon-hill-loop.pdf">
             <span>
-              <strong><i>
-                <svg width="22" height="22" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1596 476q14 14 28 36h-472v-472q22 14 36 28zm-476 164h544v1056q0 40-28 68t-68 28h-1344q-40 0-68-28t-28-68v-1600q0-40 28-68t68-28h800v544q0 40 28 68t68 28zm160 736v-64q0-14-9-23t-23-9h-704q-14 0-23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-704q-14 0-23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-704q-14 0-23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23-9t9-23z" fill="#FE644D"/></svg>
-              </i> Download Trail Map</strong>
+              <strong><span>
+                <svg style="margin: 4px 0 -1px" width="18" height="18" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1596 476q14 14 28 36h-472v-472q22 14 36 28zm-476 164h544v1056q0 40-28 68t-68 28h-1344q-40 0-68-28t-28-68v-1600q0-40 28-68t68-28h800v544q0 40 28 68t68 28zm160 736v-64q0-14-9-23t-23-9h-704q-14 0-23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-704q-14 0-23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-704q-14 0-23 9t-9 23v64q0 14 9 23t23 9h704q14 0 23-9t9-23z" fill="#FE644D"/></svg>
+              </span> Download Trail Map</strong>
             </span>
           </a>
         </div>
@@ -87,9 +88,9 @@
     <div class="image-gallery full-width">
       <div class="container">
         <div class="row">
-          <span class="section-title full-width">
-            <h1 class="display-3">Images taken of Brandon Hill</h1>
-          </span>
+            <span class="section-title full-width">
+                <h3 class="display-3"><small>Images of </small><br>Brandon Hill</h3>
+            </span>
           <ul>
             <!-- Display images that have been uploaded -->
             <?php

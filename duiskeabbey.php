@@ -1,3 +1,4 @@
+<?php ob_start("ob_gzhandler"); ?>
 <?php include 'uploads.php'; ?>
 <?php 
   $title = 'Duiske Abbey';
@@ -13,7 +14,7 @@
       <div class="row">
 
         <!-- Navigation -->
-        <?php include '_navigation.php'; ?>
+        <?php $onPage = 'Duiske Abbey'; include '_navigation.php'; ?>
 
       </div>
     </div>
@@ -40,7 +41,7 @@
       </div>
       <div class="history col-sm-6 col-sm-offset-1">
         <span class="section-title full-width">
-          <h1 class="display-3">A Breif History</h1>
+          <h3 class="display-3">A Breif History</h3>
         </span>
         <br>
         <p>The Abbey was founded in 1204 by William Marshall the elder, earl of Pembroke, and was colonized with monks from Stanley in Wiltshire. The monks may not have arrived at Graiguenamanagh until 1207, but it seems that building may have begun in 1204 when the cemetery at Duiske was consecrated. In 1228 the religious community was fixed at thirty-six monks and fifty lay-brothers which were almost as large as Mellifont Abbey. The abbot of Duiske sat as a peer in parliament at that time.</p>
@@ -55,7 +56,7 @@
             <p>Sunday <span>11am</span></p>
             <br>
             <br>
-            <h3><span style="margin: 4px 0 -1px">
+            <h3><span>
                     <svg width="18" height="18" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1703 478q40 57 18 129l-275 906q-19 64-76.5 107.5t-122.5 43.5h-923q-77 0-148.5-53.5t-99.5-131.5q-24-67-2-127 0-4 3-27t4-37q1-8-3-21.5t-3-19.5q2-11 8-21t16.5-23.5 16.5-23.5q23-38 45-91.5t30-91.5q3-10 .5-30t-.5-28q3-11 17-28t17-23q21-36 42-92t25-90q1-9-2.5-32t.5-28q4-13 22-30.5t22-22.5q19-26 42.5-84.5t27.5-96.5q1-8-3-25.5t-2-26.5q2-8 9-18t18-23 17-21q8-12 16.5-30.5t15-35 16-36 19.5-32 26.5-23.5 36-11.5 47.5 5.5l-1 3q38-9 51-9h761q74 0 114 56t18 130l-274 906q-36 119-71.5 153.5t-128.5 34.5h-869q-27 0-38 15-11 16-1 43 24 70 144 70h923q29 0 56-15.5t35-41.5l300-987q7-22 5-57 38 15 59 43zm-1064 2q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5t16.5-22.5l21-64q4-13-2-22.5t-20-9.5h-608q-13 0-25.5 9.5t-16.5 22.5zm-83 256q-4 13 2 22.5t20 9.5h608q13 0 25.5-9.5t16.5-22.5l21-64q4-13-2-22.5t-20-9.5h-608q-13 0-25.5 9.5t-16.5 22.5z" fill="#67B36B"/></svg>
                 </span> Clergy</h3>
             <p>Parish Priest <span>V.Rev. Gerald Byrne PP.</span></p>
@@ -69,7 +70,7 @@
     <div class="container">
       <div class="row">
         <span class="section-title full-width">
-          <h1 class="display-3">Images taken of Duiske Abbey</h1>
+          <h3 class="display-3"><small>Images taken of </small><br>Duiske Abbey</h3>
         </span>
 
         <ul>

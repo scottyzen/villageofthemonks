@@ -429,6 +429,26 @@
 		"oAP": "\/brandonhill.php",
 		"oF": 0
 		},
+	"\/build\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/build\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/connect.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -621,10 +641,10 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/min\/gulpfile-min.js",
-		"oF": 0,
-		"sC": 1,
+		"oF": 1,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/img\/add-image.png": {
@@ -977,6 +997,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/img\/favicon.png": {
+		"ft": 32768,
+		"iS": 17680,
+		"oA": 0,
+		"oAP": "\/img\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/first-cross.jpg": {
@@ -1371,16 +1402,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/min\/gulpfile-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/min\/min\/gulpfile-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -1402,6 +1423,13 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/php.ini": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/php.ini",
+		"oF": 0
 		},
 	"\/PSD\/main.psd": {
 		"cB": 0,
@@ -3295,6 +3323,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/_variables.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/_weather.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -4419,6 +4460,26 @@
 		"oA": 2,
 		"oAP": "\/src\/Instagram.php",
 		"oF": 0
+		},
+	"\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style.css",
+		"oF": 2,
+		"oS": 3
+		},
+	"\/tailwind.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/min\/tailwind-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/thedesertedvillage.php": {
 		"cB": 0,

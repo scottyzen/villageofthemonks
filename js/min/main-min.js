@@ -55,6 +55,11 @@ $(function () {
     })
 
 
+    $('#pages-expanded__button').on('click', function () {
+        $('.dropdown__link').toggleClass('dropdown__link--open')
+    });
+
+
 
     var instafeedHasExecuted = false;
 
@@ -64,6 +69,7 @@ $(function () {
 
         // INSTAFEED
         if (xScroll > 3000 && !instafeedHasExecuted) {
+            console.log('Load Instagram images...');
             $(".instafeed").load("Instagram.php");
             instafeedHasExecuted = true;
         }
@@ -157,9 +163,18 @@ $(function () {
     }
 
     // Add Left/Right buttons to lightbox
-    $(".lightbox").html(`<div class="show-full-size-image"></div>
-          <a class="next-image"><i class="fa fa-arrow-circle-right"></i></a>
-          <a class="prev-image"><i class="fa fa-arrow-circle-left"></i></a>`);
+    $(".lightbox").html(`
+        <div class="show-full-size-image"></div>
+        <a class="next-image">
+            <span>
+                <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z" fill="#fff" /></svg>
+            </span>
+        </a>
+        <a class="prev-image">
+            <span>
+                <svg width="24" height="24" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1427 301l-531 531 531 531q19 19 19 45t-19 45l-166 166q-19 19-45 19t-45-19l-742-742q-19-19-19-45t19-45l742-742q19-19 45-19t45 19l166 166q19 19 19 45t-19 45z" fill="#fff" /></svg>
+            </span>
+        </a>`);
 
     function renderDisplay(possition) {
         var image = $(".image-gallery ul")

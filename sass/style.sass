@@ -1,3 +1,4 @@
+@import variables
 @import fonts
 @import bootstrap
 @import facts
@@ -9,6 +10,11 @@
 @import animations
 @import hamburgers
 
+
+@tailwind preflight
+@tailwind components
+@tailwind utilities
+
 *
   margin: 0
   padding: 0
@@ -18,43 +24,12 @@
   img
     max-width: 100%
 
-// Colors
-$yellow : #f1cf43
-$dark : #1d364a
-$green : #339933
-
-// Shadow
-$shadow : 0 12px 36px -4px rgba(30, 54, 72, .25)
-
-// Breakpoints    
-$mobile-width: 481px
-$tablet-width: 768px
-$laptop-width: 1025px
-$desktop-width: 1281px
-$ultra-wide-width: 1800px 
-
-=mobile
-  @media (min-width: #{$mobile-width}) 
-      @content
-
-=tablet
-  @media (min-width: #{$tablet-width}) 
-      @content
-
-=laptop
-  @media (min-width: #{$laptop-width}) 
-      @content
-
-=desktop
-  @media (min-width: #{$desktop-width}) 
-      @content
-
-=ultra-wide
-  @media (min-width: #{$ultra-wide-width}) 
-      @content
+a, button
+    cursor: pointer
 
 *
-  transition: all 150ms linear
+  transition: all 150ms ease
+
 .stop-scrolling
   height: 100%
   overflow: hidden
@@ -89,7 +64,7 @@ body
 	font-family: 'festivo'
 	padding: 8px 16px
 	line-height: 1
-	box-shadow: 0 12px 18px -6px rgba(85, 237, 153, .6)
+	box-shadow: 0 8px 24px -6px rgba(85,237,153,0.6)
 	border-radius: 3px
 	display: inline-block
 	transition: all 200ms ease
@@ -133,13 +108,12 @@ body
             height: calc(35vh + 35vw)
             background-size: 100%, cover
         .row
-            overflow: (hidden !important)
             z-index: (999 !important)
             .logo
-                @extend .col-xs-4, .col-xs-offset-1, .col-sm-5, .col-sm-offset-0
+                @extend .col-xs-4, .col-xs-offset-1, .col-sm-2, .col-sm-offset-0
                 position: relative
                 font-family: 'Proxima Nova Rg'
-                h1
+                h2
                     width: 30px
                     height: 60px
                     margin-top: -0px
@@ -156,19 +130,70 @@ body
                     line-height: 14px
                     font-size: 16px
             nav
-                @extend .col-xs-6, .col-sm-offset-1, .col-sm-6
-                padding: 10px 0 0
+                @extend .col-xs-6, .col-sm-offset-1, .col-sm-9
+                padding: 15px 0 0
                 color: #fff
                 z-index: (999 !important)
+                // text-shadow: 0 1px 2px rgba(1,1,1,0.35)
                 ul
                     list-style-type: none
                     display: flex
                     flex-direction: row
                     justify-content: flex-end
+                    li
+                        padding: 1rem
+                        padding-right: 0
                     i
                         font-size: 25px
                     a
-                        color: #fff 
+                        transition: none
+                        display: inline-block
+                        color: #f3f3f3
+                        border-bottom: 2px solid rgba(0,0,0,0)
+                        text-shadow: 0 3px 15px rgba(0,0,0, 0.25)
+                        &:hover
+                            border-bottom: 2px solid $green
+                            color: #fff
+                            
+                
+
+            .desktop_nav
+                li 
+                    display: none
+                    +tablet 
+                        display: block
+                        padding-left: 20px
+                li.dropdown__link
+                    position: relitive
+                    text-align: right
+                    overflow: hidden
+                    transition: all 150ms linear
+                    a#pages-expanded__button
+                        svg
+                            transition: all 200ms linear
+                            transform: translateY(2px) rotate(135deg) scale(0.9)
+                    ul 
+                        transition: all 0ms linear 00ms // transition is fired on open
+                        justify-content: space-between
+                        width: 100%
+                        opacity: 0
+                        transform: translateX(600px)
+                        li
+                            padding-left: 20px
+
+                li.dropdown__link--open
+                    transform: translateY(-33px)
+                    a#pages-expanded__button
+                        svg
+                            transform: translateY(2px) rotate(0deg)
+                    ul 
+                        transition: all 300ms ease-in-out 200ms // transition is fired on close
+                        opacity: 1
+                        transform: translateX(0)
+                
+                .hamburger
+                    +tablet 
+                        display: none
 
             .show_menu
                 display: (block !important)
@@ -320,9 +345,11 @@ body
 .splash
   padding-top: 100px
   .row
-    background-size: 80%
-    background-position: left
-    background-repeat: no-repeat
+	  background-size: 100%
+	  +laptop
+	  	background-size: 80%
+	  background-position: left
+	  background-repeat: no-repeat
   p  
     text-align: left
     margin-bottom: 8%
@@ -330,7 +357,10 @@ body
   h2
     font-size: 36px
   #brandon
-    background-image: url('https://scottyzen.sirv.com/Images/v/brandon-splash.png')
+	  background-image: url('https://scottyzen.sirv.com/Images/v/brandon-splash.png')
+	  margin-top: 6rem
+	  +laptop
+	  	margin-top: 0
   #duiske
     background-image: url('https://scottyzen.sirv.com/Images/v/duiske-splash.png')
     background-position: right
