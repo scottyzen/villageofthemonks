@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title><?php echo ($title) ? $title.' | Village of the Monks' : 'Graiguenamanagh | Village of the Monks' ?></title>
-    <link rel="stylesheet" href="./build/css/style.css">
+    <link rel="stylesheet" href="./build/style.css">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
