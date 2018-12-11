@@ -8,16 +8,32 @@
 ?>
 
   <div class="wrapper">
-    <!-- Header Image -->
-    <div class="header" id="tinnahinchcastle-header">
-      <div class="container">
-        <div class="row">
 
-          <!-- Navigation -->
-          <?php $onPage = 'Tinnahinch Castle'; include '_navigation.php'; ?>
+    <!-- Header -->
+    <div class="header" id="tinnahinchcastle-header">
+
+        <!-- Main Header Image -->
+        <picture>
+            <source srcset="../img/tinnahinch-castle-header-extra-large.jpg" media="(min-width: 1800px)">
+            <source srcset="../img/tinnahinch-castle-header-large.jpg" media="(min-width: 1200px)">
+            <source srcset="../img/tinnahinch-castle-header-medium.jpg" media="(min-width: 576px)">
+            <img src="../img/tinnahinch-castle-header.jpg" alt="Tinnchinch castle overgrown with foliage">
+        </picture>
+
+        <!-- Header Brush Strokes -->
+        <div class="header-brush header-brush--alt-2"></div>
+
+        <!-- Logo and Navigation -->
+        <div class="absolute pin-t pin-l w-full">
+            <div class="container mt-16">
+                <div class="row">
+                    <!-- Navigation -->
+                    <?php $onPage = 'Tinnahinch Castle'; include '_navigation.php'; ?>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+
+    </div><!-- End of Header -->
 
     <div class="container start">
       <div class="row">
@@ -30,7 +46,7 @@
         </div>
 
         <div class="first-image">
-          <img id="top-image" src="https://scottyzen.sirv.com/Images/v/tinnahinch-castle-sketch.png" alt="two sketches of Tinnahinch castle from years ago.">
+          <img id="top-image" class="lazy blur" src="../img/tinnahinch-castle-sketch.jpg" alt="two sketches of Tinnahinch castle from years ago.">
           <br>
         </div>
       </div> <!-- end row -->
@@ -74,20 +90,34 @@
           </div>
 
           <!-- Overlay behind form -->
-          <div class="overlay"></div>
+          <div class="overlay">
+              <!-- Upload Form -->
+            <?php
+                include_once '_imageGallary.php';
+                imageUploadForm('tinnahinch-castle');
+            ?>
+          </div>  
+
 
           <!-- Display full size image here -->
           <div class="lightbox"></div>
 
-          <!-- Upload Form -->
-          <?php
-            include_once '_imageGallary.php';
-            imageUploadForm('tinnahinch-castle');
-          ?>
-
         </div>
       </div>
     </div>
+
+    <!-- Insta Feed -->
+    <div class="container graig-feed">
+        <div class="row">
+            <span class="section-title full-width">
+            <small>#TinnahinchCastle</small><br>
+            <h2 class="display-2 lgfont">Tinnahinch Castle's Instagram Feed</h2>
+            </span>
+            <ul class="instafeed text-transparent">TinnahinchCastle</ul>
+            <p class="tooltip"> <i class="fa fa-instagram fa-lg" aria-hidden="true"></i> Tag your photos with <strong>#TinnahinchCastle</strong> to see them displayed here. Your account must not be set to private.</p>
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </div>
+        </div>
   </div><!-- End of Wrapper -->
 
 <?php include '_footer.php'; ?>

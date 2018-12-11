@@ -2,17 +2,32 @@
 <?php $title = 'Graiguenamanagh'; include '_header.php'; ?>
 
   <div class="wrapper">
-    <!-- Header Image -->
+    
+    <!-- Header -->
     <div class="header">
-      <div class="container">
-        <div class="row">
 
-          <!-- Navigation -->
-          <?php $onPage = 'Home'; include '_navigation.php'; ?>
+        <!-- Main Header Image -->
+        <picture>
+            <source srcset="../img/main-header-extra-large.jpg" media="(min-width: 1870px)">
+            <source srcset="../img/main-header-large.jpg" media="(min-width: 1200px)">
+            <source srcset="../img/main-header-medium.jpg" media="(min-width: 576px)">
+            <img src="../img/main-header.jpg" alt="Graiguenamanagh bridge over the River Barrow with the Duiske Abbey in the background">
+        </picture>
 
+        <!-- Header Brush Strokes -->
+        <div class="header-brush"></div>
+
+        <!-- Logo and Navigation -->
+        <div class="absolute pin-t pin-l w-full">
+            <div class="container mt-16">
+                <div class="row">
+                    <!-- Navigation -->
+                    <?php $onPage = 'Home'; include '_navigation.php'; ?>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+
+    </div><!-- End of Header -->
 
     <div class="container start">
       <div class="row">
@@ -51,15 +66,15 @@
 
         <!-- View of Graig from the Air -->
         <div class="first-image">
-          <img id="top-image" src="https://scottyzen.sirv.com/Images/v/graig-air.jpg" alt="View of Graiguenamanagh from the air" title="View of Graiguenamanagh from the air">
-          <p>Graiguenamanagh expanded beyond the Abbey as a market town, aided by the development of the Grand Canal and the navigation of the <a href="riverbarrow.php">River Barrow</a>, which ultimately connected the town with Dublin, New Ross, Waterford and Carlow. The production of wool was historically important to the town’s economy and sheep rearing remains a predominant agricultural activity in the hinterland.</p>
+          <img id="top-image" class="lazy blur" src="../img/graig-air.jpg" alt="View of Graignamanagh from the air" title="View of Graignamanagh from the air">
+          <p>Graignamanagh expanded beyond the Abbey as a market town, aided by the development of the Grand Canal and the navigation of the <a href="riverbarrow.php">River Barrow</a>, which ultimately connected the town with Dublin, New Ross, Waterford and Carlow. The production of wool was historically important to the town’s economy and sheep rearing remains a predominant agricultural activity in the hinterland.</p>
         </div>
       </div> <!-- end row -->
 
     </div> <!-- end container -->
 
     <!-- Green Splash Text -->
-    <div class="full-width green-river">
+    <div class="full-width green-river lazyBackground" style="background-image: url('../img/green-river.png')">
       <div class="container">
         <div class="row">
           <p id="green-river-text" >It has been called Ireland's best kept secret and is a veritable treasure trove of varied scenery, ancient buildings, canal boating, river and hill walks, restaurants, crafts, traditional pubs and much more.</p>
@@ -71,7 +86,7 @@
       <div class="container">
 
         <!-- Brandon Hill -->
-        <div class="row" id="brandon">
+        <div class="row lazyBackground" id="brandon" style="background-image: url('../img/brandon-splash.png')">
           <div class="med-info right">
             <span class="section-title">
               <h2><small>Cnoc Bhréanail</small><br>Brandon Hill</h2>
@@ -82,18 +97,18 @@
         </div>
 
         <!-- Duiske Abbey -->
-        <div class="row" id="duiske">
+        <div class="row lazyBackground" id="duiske" style="background-image: url('../img/duiske-splash.png')">
           <div class="med-info left">
             <span class="section-title">
               <h2><small>Mainistir Dhubhiske</small><br>Duiske Abbey</h2>
             </span>
-            <p>Duiske Abbey was founded by William Marshall in 1204 and is one of the first, largest and perhaps the finest of the thirty-four medieval Cistercian monasteries in Ireland. The Abbey is the parish church of Graiguenamanagh town and beautifully dominates the town centre.</p>
+            <p>Duiske Abbey was founded by William Marshall in 1204 and is one of the first, largest and perhaps the finest of the thirty-four medieval Cistercian monasteries in Ireland. The Abbey is the parish church of Graignamanagh town and beautifully dominates the town centre.</p>
             <a class="main-btn" href="duiskeabbey.php">Read more</a>
           </div>
         </div>
 
         <!-- Tinnahinch Castle -->
-        <div class="row" id="tinnahinch-castle">
+        <div id="tinnahinch-castle" class="row lazyBackground" style="background-image: url('../img/tinnahinch-castle-splash.png')">
           <div class="med-info right">
             <span class="section-title">
               <h2><small>Caisleán Tigh na hInse</small><br>Tinnahinch Castle</h2>
@@ -104,7 +119,7 @@
         </div>
 
         <!-- River Barrow -->
-        <div class="row" id="riverbarrow">
+        <div class="row lazyBackground" id="riverbarrow" style="background-image: url('../img/river-splash.png')">
           <div class="med-info left">
             <span class="section-title">
               <h2><small>An Bhearú</small><br>River Barrow</h2>
@@ -128,14 +143,14 @@
         </div>
         
     </div>
+
     <div class="container graig-feed">
       <div class="row">
         <span class="section-title full-width">
           <small>#Graiguenamanagh</small><br>
           <h2 class="display-2 lgfont">Graig's Instagram Feed</h2>
         </span>
-        <ul class="instafeed">
-        </ul>
+        <ul class="instafeed text-transparent">Graiguenamanagh</ul>
         <p class="tooltip"> <i class="fa fa-instagram fa-lg" aria-hidden="true"></i> Tag your photos with <strong>#Graiguenamanagh</strong> to see them displayed here. Your account must not be set to private.</p>
         <i class="fa fa-info-circle" aria-hidden="true"></i>
       </div>

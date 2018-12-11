@@ -7,18 +7,33 @@
   include '_header.php'; 
 ?>
   <div class="wrapper">
-    <!-- Header Image -->
-    <div class="header" id="brandonhill-header">
-      <div class="container">
-        <div class="row">
 
-          <!-- Navigation -->
-          <?php $onPage = 'Brandon Hill'; include '_navigation.php'; ?>
+    <!-- Header -->
+    <div class="header">
 
+        <!-- Main Header Image -->
+        <picture>
+            <source srcset="../img/brandon-header-extra-large.jpg" media="(min-width: 1870px)">
+            <source srcset="../img/brandon-header-large.jpg" media="(min-width: 1200px)">
+            <source srcset="../img/brandon-header-medium.jpg" media="(min-width: 500px)">
+            <img src="../img/brandon-header.jpg" alt="View of Graignamanagh from the top of Brandon with the cross in the forground">
+        </picture>
+
+        <!-- Header Brush Strokes -->
+        <div class="header-brush"></div>
+
+        <!-- Logo and Navigation -->
+        <div class="absolute pin-t pin-l w-full">
+            <div class="container mt-16">
+                <div class="row">
+                    <!-- Navigation -->
+                    <?php $onPage = 'Brandon Hill'; include '_navigation.php'; ?>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <br>
+
+    </div><!-- End of Header -->
+
     <div class="container start">
       <div class="row">
         <div class="intro">
@@ -65,7 +80,7 @@
         </div>
         <div class="trail-facts col-sm-7 col-sm-offset-1">
           <strong>Direction to Trailhead</strong>
-          <p>Brandon Hill loop starts in the town of Graiguenamanagh. The trailhead is at the junction on Lower Main Street.</p>
+          <p>Brandon Hill loop starts in the town of Graignamanagh. The trailhead is at the junction on Lower Main Street.</p>
           <br>
           <ul>
             <li>
@@ -105,19 +120,20 @@
             <br>
             <a class="main-btn submit-photo">Upload Photo</a></p>
           </div>
-
-          <!-- Overlay behind form -->
-          <div class="overlay"></div>
           
+           <!-- Overlay behind form -->
+          <div class="overlay">
+               <!-- Upload Form -->
+            <?php
+                include_once '_imageGallary.php';
+                imageUploadForm('brandon');
+            ?>
+          </div>
+
           <!-- Display full size image here -->
           <div class="lightbox"></div>
 
-          <!-- Upload Form -->
-          <?php
-            include_once '_imageGallary.php';
-            imageUploadForm('brandon');
-          ?>
-
+         
         </div>
       </div>
     </div>

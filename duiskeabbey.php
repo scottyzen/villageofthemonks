@@ -8,18 +8,32 @@
 ?>
 
 <div class="wrapper">
-  <!-- Header Image -->
-  <div class="header" id="duiskeabbey-header">
-    <div class="container">
-      <div class="row">
 
-        <!-- Navigation -->
-        <?php $onPage = 'Duiske Abbey'; include '_navigation.php'; ?>
+    <!-- Header -->
+    <div class="header" id="duiskeabbey-header">
 
-      </div>
-    </div>
-  </div>
-  <br>
+        <!-- Main Header Image -->
+        <picture>
+            <source srcset="../img/duiske-abbey-header-extra-large.jpg" media="(min-width: 1600px)">
+            <source srcset="../img/duiske-abbey-header-large.jpg" media="(min-width: 1100px)">
+            <source srcset="../img/duiske-abbey-header-medium.jpg" media="(min-width: 576px)">
+            <img src="../img/duiske-abbey-header.jpg" alt="Duiske Abbey from the graveyard.">
+        </picture>
+
+        <!-- Header Brush Strokes -->
+        <div class="header-brush header-brush--alt-2"></div>
+
+        <!-- Logo and Navigation -->
+        <div class="absolute pin-t pin-l w-full">
+            <div class="container mt-16">
+                <div class="row">
+                    <!-- Navigation -->
+                    <?php $onPage = 'Duiske Abbey'; include '_navigation.php'; ?>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- End of Header -->
 
   <div class="container start">
     <div class="row">
@@ -28,7 +42,7 @@
           <small>Est. 1204</small>
           <h1>Duiske Abbey</h1>
         </span>
-        <p>A National Monument, Duiske Abbey originated in the 13th century as the church of a Cistercian monastery, but today it is a Catholic parish church in the town of Graiguenamanagh, County Kilkenny. The abbey began to deteriorate in 1536 as it was suppressed, and it gradually fell into ruin. The last tragedy occurred in 1744 when the tower collapsed into the nave. It later underwent some renovations while serving as a place of worship for the Protestant Church of Ireland, returned to the Catholic community in 1812. Duiske Abbey was fully restored in the 1980s.</p>
+        <p>A National Monument, Duiske Abbey originated in the 13th century as the church of a Cistercian monastery, but today it is a Catholic parish church in the town of Graignamanagh, County Kilkenny. The abbey began to deteriorate in 1536 as it was suppressed, and it gradually fell into ruin. The last tragedy occurred in 1744 when the tower collapsed into the nave. It later underwent some renovations while serving as a place of worship for the Protestant Church of Ireland, returned to the Catholic community in 1812. Duiske Abbey was fully restored in the 1980s.</p>
         <p>The abbey’s simple exterior contrasts with its elaborate interior, where visitors can see the ancient stone and high clerestory windows of the nave as well as an effigy of a 13th-century knight at the entrance. The processional door of the 13th century and early medieval floor tiles are visible and can be seen in the sunken floor to the right of the main entrance. Additionally, the churchyard is home to the Aghakiltawn and Ballyogen Crosses, dating from the 8th and 9th centuries. Built into the wall of the Abbey is a Cross Slab, also in the abbey grounds is the base of a third cross.
         </p>
         <br>
@@ -36,7 +50,7 @@
 
       </div>
       <div class="first-image">
-        <img id="top-image" src="https://scottyzen.sirv.com/Images/v/duiske-abbey-inside.jpg" alt="A door inside the duiske abbey">
+        <img id="top-image" class="lazy blur" src="../img/duiske-abbey-inside.jpg" alt="A door inside the duiske abbey">
         <br>
       </div>
       <div class="history col-sm-6 col-sm-offset-1">
@@ -89,20 +103,33 @@
         </div>
 
         <!-- Overlay behind form -->
-        <div class="overlay"></div>
-
+        <div class="overlay">
+            <!-- Upload Form -->
+            <?php
+            include_once '_imageGallary.php';
+            imageUploadForm('duiske-abbey');
+            ?>
+        </div>
+        
         <!-- Display full size image here -->
         <div class="lightbox"></div>
-
-        <!-- Upload Form -->
-        <?php
-          include_once '_imageGallary.php';
-          imageUploadForm('duiske-abbey');
-        ?>
 
       </div>
     </div>
   </div>
+
+  <!-- Insta Feed -->
+  <div class="container graig-feed">
+      <div class="row">
+        <span class="section-title full-width">
+          <small>#DuiskeAbbey</small><br>
+          <h2 class="display-2 lgfont">Duiske Abbey's Instagram Feed</h2>
+        </span>
+        <ul class="instafeed text-transparent">DuiskeAbbey</ul>
+        <p class="tooltip"> <i class="fa fa-instagram fa-lg" aria-hidden="true"></i> Tag your photos with <strong>#DuiskeAbbey</strong> to see them displayed here. Your account must not be set to private.</p>
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+      </div>
+    </div>
 </div>
 <!-- End of Wrapper -->
 

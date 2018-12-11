@@ -1,15 +1,20 @@
 <?php
+$name = $_GET['name'];
+
 function getSimpleMediaByHashtag($hashtag){
 
+
         $random = 'J0HWVISlQAAAF0HWVCuAwAAAFjwA';
-        $excludeIds = array('BcIp5dzBpf3');
+        $excludeIds = array('BcIp5dzBpf3', 'BkI6ZlUFf3L', 'BqA6ZCDBlsU', 'BoeWQMun2e5', 'BaCig7jhPMV');
         $bandedUsers = array(
             '3926081380',   // Cosy
             '2353537237',   // Barros Sports Shop
             '4158539063',   // Duiske Glass
             '6697436681',   // Kissans chemist
             '6037773637',   // Barrows Keep
-            '7090848166'    // Life with Chewbella
+            '7090848166',   // Life with Chewbella
+            '211990278'     // Some Wedding
+
         );
 
         $ch = curl_init();
@@ -38,7 +43,7 @@ function getSimpleMediaByHashtag($hashtag){
             $description = $v[edge_media_to_caption][edges][0][node][text];
             $user = $v[owner][id];
             
-            if ($i <= 30) {
+            if ($i <= 24) {
                 // Check if USER is baned
                 if (!in_array($user, $bandedUsers)) {
                     // Check image to exclude based on ID
@@ -51,5 +56,5 @@ function getSimpleMediaByHashtag($hashtag){
         }
     }
 
-    getSimpleMediaByHashtag('graiguenamanagh');
+    getSimpleMediaByHashtag($name);
     ?>

@@ -31,36 +31,48 @@ function imageUploadForm($formName){
 
 echo '<div class="upload-form">
 
-  <form action="" method="POST" enctype="multipart/form-data">
+  <form action="" method="POST" enctype="multipart/form-data" class="w-full px-24 py-20 flex flex-wrap bg-white" >
 
-    <span class="section-title full-width">
-      <h1 class="display-3">Upload Image</h1>
-    </span>
-
+    <span class="heading text-7xl md:text-8xl text-center m-auto text-grey-darkest">Upload image</span>
+  
     <!-- Brandon -->
     <input type="hidden" name="tag" value="'.$formName.'">
 
-    <!-- File -->
-    <label for="image" class="fileContainer">
-        <p></p>
-        <input  type="file" name="image" accept="image/*"/ required/>
-        <span>Select a File</span>
-    </label>
-
-    <!-- Image Info -->
-      <textarea name="text" placeholder="Some info about your image"></textarea>
-
-    <!-- Name -->
-    <input type="text" name="name" placeholder="Your name">
-
-    <!-- Buttons -->
-    <div class="form-group-buttons">
-      <!-- Upload Image -->
-      <button type="submit" name="upload"><i class="fa fa-upload" aria-hidden="true"></i> Upload image</button>
+    <div class="flex flex-wrap w-full my-5" >
+        <div class="w-full lg:w-1/4" >
+            <lable class="font-bold w-full" for="text" >Name</lable>
+        </div>
+        <div class="w-full lg:w-3/4" >
+            <input class="bg-grey-lighter w-full appearance-none border-2 border-grey-lighter rounded px-4 py-4 text-grey-darker leading-tight focus:outline-none" type="text" name="name" placeholder="Your name">
+        </div>
     </div>
 
-    <!-- Cancel Upload -->
-    <button type="reset" id="cancel" name="upload"><i class="fa fa-times" aria-hidden="true"></i></button>
+    <div class="flex flex-wrap w-full mt-5" >
+        <div class="w-full lg:w-1/4" >
+            <lable class="font-bold w-full" for="text" >Description</lable>
+        </div>
+        <div class="w-full lg:w-3/4" >
+            <textarea name="text" rows="4" placeholder="Some info about your image" class="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded w-full py-4 px-6 text-grey-darker leading-tight focus:outline-none" ></textarea>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap w-full my-4" >
+        <div class="w-full lg:w-1/4" >
+            <lable class="font-bold w-full" for="file" >Image</lable>
+        </div>
+        <div class="w-full lg:w-3/4" >
+            <input type="file" id="image" name="image" class=" text-xl" accept="image/*" required/>
+        </div>
+    </div>
+    
+    <!-- Buttons -->
+    <div class="flex w-full mt-16" >
+    
+        <button type="submit" name="upload" class="main-btn my-4 mr-4" >Upload photo</button>
+
+        <button type="reset" id="cancel" name="upload" class="inline-block align-baseline my-4 px-5 rounded font-bold text-grey-darker hover:bg-red-lightest" >Cancel</button>
+        
+    </div>
   </form>
 
 </div>';

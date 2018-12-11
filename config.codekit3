@@ -394,6 +394,13 @@
 		"oAP": "\/.sass-cache\/c3eef93bbb71a044ad3bd976626f7fb8f55eae6d\/font-awesome.scssc",
 		"oF": 0
 		},
+	"\/404.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/404.php",
+		"oF": 0
+		},
 	"\/_footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -429,6 +436,16 @@
 		"oAP": "\/brandonhill.php",
 		"oF": 0
 		},
+	"\/build\/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/style-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/build\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -455,6 +472,13 @@
 		"oAP": "\/css\/style-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/dist\/404.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/dist\/404.php",
+		"oF": 0
 		},
 	"\/dist\/_footer.php": {
 		"cB": 0,
@@ -554,77 +578,32 @@
 		"oAP": "\/duiskeabbey.php",
 		"oF": 0
 		},
-	"\/fonts\/Festivo6.otf": {
+	"\/fonts\/Festivo6.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/Festivo6.otf",
+		"oAP": "\/fonts\/Festivo6.woff",
 		"oF": 0
 		},
-	"\/fonts\/fontawesome-webfont.eot": {
+	"\/fonts\/ProximaNova-Bold.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/fontawesome-webfont.eot",
+		"oAP": "\/fonts\/ProximaNova-Bold.ttf",
 		"oF": 0
 		},
-	"\/fonts\/fontawesome-webfont.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/fontawesome-webfont.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/fontawesome-webfont.ttf": {
+	"\/fonts\/ProximaNova-Regular.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/fontawesome-webfont.ttf",
+		"oAP": "\/fonts\/ProximaNova-Regular.ttf",
 		"oF": 0
 		},
-	"\/fonts\/fontawesome-webfont.woff": {
+	"\/fonts\/Rukola.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/fontawesome-webfont.woff",
-		"oF": 0
-		},
-	"\/fonts\/fontawesome-webfont.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/fontawesome-webfont.woff2",
-		"oF": 0
-		},
-	"\/fonts\/FontAwesome.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/FontAwesome.otf",
-		"oF": 0
-		},
-	"\/fonts\/ProximaNova-Bold.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/ProximaNova-Bold.otf",
-		"oF": 0
-		},
-	"\/fonts\/ProximaNova-Regular.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/ProximaNova-Regular.otf",
-		"oF": 0
-		},
-	"\/fonts\/Rukola.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/Rukola.otf",
+		"oAP": "\/fonts\/Rukola.ttf",
 		"oF": 0
 		},
 	"\/gulpfile.js": {
@@ -636,17 +615,6 @@
 		"oF": 1,
 		"sC": 0,
 		"tS": 0
-		},
-	"\/img\/add-image.png": {
-		"ft": 32768,
-		"iS": 1739,
-		"oA": 0,
-		"oAP": "\/img\/add-image.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/img\/barrow4.jpg": {
 		"ft": 16384,
@@ -676,8 +644,8 @@
 		"oA": 0,
 		"oAP": "\/img\/body-bg.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -692,6 +660,39 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/brandon-header-extra-large.jpg": {
+		"ft": 16384,
+		"iS": 257119,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/brandon-header-extra-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/brandon-header-large.jpg": {
+		"ft": 16384,
+		"iS": 257119,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/brandon-header-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/brandon-header-medium.jpg": {
+		"ft": 16384,
+		"iS": 257119,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/brandon-header-medium.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/img\/brandon-header.jpg": {
 		"ft": 16384,
 		"iS": 312044,
@@ -700,18 +701,7 @@
 		"oAP": "\/img\/brandon-header.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/brandon-splash-right.png": {
-		"ft": 32768,
-		"iS": 87240,
-		"oA": 0,
-		"oAP": "\/img\/brandon-splash-right.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/brandon-splash.png": {
@@ -719,6 +709,17 @@
 		"iS": 859283,
 		"oA": 0,
 		"oAP": "\/img\/brandon-splash.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/brandon-splash_x2.png": {
+		"ft": 32768,
+		"iS": 1792154,
+		"oA": 0,
+		"oAP": "\/img\/brandon-splash_x2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -788,7 +789,7 @@
 		"oAP": "\/img\/brandon\/brandon6.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/brandon\/brandon7.jpg": {
@@ -823,6 +824,13 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/img\/bridge-line-art.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/bridge-line-art.webp",
+		"oF": 0
 		},
 	"\/img\/brush-strokes-dark.png": {
 		"ft": 32768,
@@ -945,6 +953,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/duiske-abbey-header-extra-large.jpg": {
+		"ft": 16384,
+		"iS": 907624,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/duiske-abbey-header-extra-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/duiske-abbey-header-large.jpg": {
+		"ft": 16384,
+		"iS": 810990,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/duiske-abbey-header-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/duiske-abbey-header-medium.jpg": {
+		"ft": 16384,
+		"iS": 846841,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/duiske-abbey-header-medium.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/duiske-abbey-header.jpg": {
+		"ft": 16384,
+		"iS": 359232,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/duiske-abbey-header.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/img\/duiske-abbey-inside.jpg": {
 		"ft": 16384,
 		"iS": 111195,
@@ -956,11 +1008,33 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/duiske-abbey-inside_x2.jpg": {
+		"ft": 16384,
+		"iS": 54459,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/duiske-abbey-inside_x2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/img\/duiske-splash.png": {
 		"ft": 32768,
 		"iS": 734207,
 		"oA": 0,
 		"oAP": "\/img\/duiske-splash.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/duiske-splash_x2.png": {
+		"ft": 32768,
+		"iS": 1325351,
+		"oA": 0,
+		"oAP": "\/img\/duiske-splash_x2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -995,8 +1069,8 @@
 		"oA": 0,
 		"oAP": "\/img\/favicon.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1063,6 +1137,17 @@
 		"oAP": "\/img\/graig-air.jpg",
 		"oF": 0,
 		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/graig-air_x2.jpg": {
+		"ft": 16384,
+		"iS": 65969,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/graig-air_x2.jpg",
+		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -1083,6 +1168,17 @@
 		"oA": 0,
 		"oAP": "\/img\/green-river.png",
 		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/green-river_x2.png": {
+		"ft": 32768,
+		"iS": 533456,
+		"oA": 0,
+		"oAP": "\/img\/green-river_x2.png",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
@@ -1094,10 +1190,17 @@
 		"oA": 0,
 		"oAP": "\/img\/logo.min.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"\/img\/logo.min.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/logo.min.webp",
+		"oF": 0
 		},
 	"\/img\/logo.png": {
 		"ft": 32768,
@@ -1110,15 +1213,48 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/main-header.jpg": {
+	"\/img\/main-header-extra-large.jpg": {
+		"ft": 16384,
+		"iS": 338671,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/main-header-extra-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/main-header-large.jpg": {
 		"ft": 16384,
 		"iS": 2391840,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/main-header-large_x2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/main-header-medium.jpg": {
+		"ft": 16384,
+		"iS": 996834,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/main-header-medium.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/main-header.jpg": {
+		"ft": 16384,
+		"iS": 449081,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/main-header.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/main-slideshow-overlay copy.png": {
@@ -1149,10 +1285,17 @@
 		"oA": 0,
 		"oAP": "\/img\/pattern-dark-bg.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"\/img\/pattern-dark-bg.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/pattern-dark-bg.webp",
+		"oF": 0
 		},
 	"\/img\/river-barrow-air.jpg": {
 		"ft": 16384,
@@ -1165,6 +1308,39 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/river-barrow-header-extra-large.jpg": {
+		"ft": 16384,
+		"iS": 508711,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/river-barrow-header-extra-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/river-barrow-header-large.jpg": {
+		"ft": 16384,
+		"iS": 508711,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/river-barrow-header-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/river-barrow-header-medium.jpg": {
+		"ft": 16384,
+		"iS": 508711,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/river-barrow-header-medium.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/img\/river-barrow-header.jpg": {
 		"ft": 16384,
 		"iS": 667044,
@@ -1173,7 +1349,7 @@
 		"oAP": "\/img\/river-barrow-header.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/river-splash.png": {
@@ -1181,6 +1357,17 @@
 		"iS": 1823070,
 		"oA": 0,
 		"oAP": "\/img\/river-splash.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/river-splash_x2.png": {
+		"ft": 32768,
+		"iS": 536006,
+		"oA": 0,
+		"oAP": "\/img\/river-splash_x2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1248,8 +1435,8 @@
 		"oA": 0,
 		"oAP": "\/img\/section-title-brush-6.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1259,8 +1446,8 @@
 		"oA": 0,
 		"oAP": "\/img\/section-title-brush-7.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1275,26 +1462,70 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/tinnahinch-castle-header.jpg": {
+	"\/img\/tinnahinch-castle-header-extra-large.jpg": {
 		"ft": 16384,
-		"iS": 365852,
+		"iS": 1081542,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/tinnahinch-castle-header.jpg",
+		"oAP": "\/img\/tinnahinch-castle-header-extra-large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/tinnahinch-castle-header-large.jpg": {
+		"ft": 16384,
+		"iS": 347780,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/tinnahinch-castle-header-large.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/img\/tinnahinch-castle-sketch.png": {
-		"ft": 32768,
-		"iS": 360410,
+	"\/img\/tinnahinch-castle-header-medium.jpg": {
+		"ft": 16384,
+		"iS": 752921,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/tinnahinch-castle-sketch.png",
+		"oAP": "\/img\/tinnahinch-castle-header-medium.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/tinnahinch-castle-header.jpg": {
+		"ft": 16384,
+		"iS": 405227,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/tinnahinch-castle-header.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/tinnahinch-castle-sketch.jpg": {
+		"ft": 16384,
+		"iS": 330773,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/tinnahinch-castle-sketch.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/img\/tinnahinch-castle-sketch_x2.jpg": {
+		"ft": 16384,
+		"iS": 330773,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/img\/tinnahinch-castle-sketch_x2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/tinnahinch-castle-splash.png": {
@@ -1303,10 +1534,91 @@
 		"oA": 0,
 		"oAP": "\/img\/tinnahinch-castle-splash.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"\/img\/tinnahinch-castle-splash_x2.png": {
+		"ft": 32768,
+		"iS": 1835445,
+		"oA": 0,
+		"oAP": "\/img\/tinnahinch-castle-splash_x2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/webp\/brandon-splash.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/brandon-splash.webp",
+		"oF": 0
+		},
+	"\/img\/webp\/brandon-splash_x2.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/brandon-splash_x2.webp",
+		"oF": 0
+		},
+	"\/img\/webp\/duiske-splash.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/duiske-splash.webp",
+		"oF": 0
+		},
+	"\/img\/webp\/duiske-splash_x2.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/duiske-splash_x2.webp",
+		"oF": 0
+		},
+	"\/img\/webp\/green-river.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/green-river.webp",
+		"oF": 0
+		},
+	"\/img\/webp\/green-river_x2.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/green-river_x2.webp",
+		"oF": 0
+		},
+	"\/img\/webp\/river-splash.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/river-splash.webp",
+		"oF": 0
+		},
+	"\/img\/webp\/river-splash_x2.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/river-splash_x2.webp",
+		"oF": 0
+		},
+	"\/img\/webp\/tinnahinch-castle-splash.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/tinnahinch-castle-splash.webp",
+		"oF": 0
+		},
+	"\/img\/webp\/tinnahinch-castle-splash_x2.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/img\/webp\/tinnahinch-castle-splash_x2.webp",
+		"oF": 0
 		},
 	"\/index.php": {
 		"cB": 0,
@@ -4451,16 +4763,6 @@
 		"oAP": "\/src\/Instagram.php",
 		"oF": 0
 		},
-	"\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/style.css",
-		"oF": 2,
-		"oS": 3
-		},
 	"\/tailwind.js": {
 		"ft": 64,
 		"ma": 0,
@@ -4553,6 +4855,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/uploads\/bridge-thumbnail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/uploads\/candle.jpg": {
+		"ft": 16384,
+		"iS": 115033,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/uploads\/candle.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

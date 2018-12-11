@@ -6,26 +6,40 @@
   include '_header.php'; 
 ?>
   <div class="wrapper">
-    <!-- Header Image -->
-    <div class="header" id="tinnahinchcastle-header">
-      <div class="container">
-        <div class="row">
+    <!-- Header -->
+    <div class="header">
 
-          <!-- Navigation -->
-          <?php include '_navigation.php'; ?>
+        <!-- Main Header Image -->
+        <picture>
+            <source srcset="../img/tinnahinch-castle-header-extra-large.jpg" media="(min-width: 1800px)">
+            <source srcset="../img/tinnahinch-castle-header-large.jpg" media="(min-width: 1200px)">
+            <source srcset="../img/tinnahinch-castle-header-medium.jpg" media="(min-width: 576px)">
+            <img src="../img/tinnahinch-castle-header.jpg" alt="Tinnchinch castle overgrown with foliage">
+        </picture>
 
+        <!-- Header Brush Strokes -->
+        <div class="header-brush header-brush--alt-2"></div>
+
+        <!-- Logo and Navigation -->
+        <div class="absolute pin-t pin-l w-full">
+            <div class="container mt-16">
+                <div class="row">
+                    <!-- Navigation -->
+                    <?php include '_navigation.php'; ?>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <br>
+
+    </div><!-- End of Header -->
+
     <div class="container start pb-8">
-    <br><br>
+    <br><br><br>
 
     <span class="section-title" style="background-position: center">
-        <small>Tinnahinch</small>
+        <small >Tinnahinch</small>
         <h1>The Deserted Village</h1>
-    </span>
-      <div class="row max-w-sm">
+    </span> 
+      <div class="row max-w-lg m-auto">
         <p>
         Sweet smiling village must we bid farewell
         To that old homestead known as “The Hotel”.

@@ -3,6 +3,7 @@
       <div class="row">
         <div class="one">
           <h3>All Pages</h3>
+          <hr>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/brandonhill.php">Brandon Hill</a></li>
@@ -15,6 +16,7 @@
 
         <div class="two">
           <h3>Community Links</h3>
+          <hr>
           <ul>
                 <li><a target="_blank" href="https://www.facebook.com/brandonhillcross">Brandon Hill Cross Committee</a></li>
                 <li><a target="_blank" href="https://www.facebook.com/franciesbar/">Cosy Inn</a></li>
@@ -32,6 +34,7 @@
 
         <div class="three">
             <h3>Poems, Articals & Stories</h3>
+            <hr>
             <ul>
                 <li><a href="/thedesertedvillage.php">The Deserted Village</a></li>
             </ul>
@@ -41,18 +44,12 @@
 
         <!-- Copyright info -->
         <div class="copyright">
-
-            <!-- Facebook Share Button -->
-            <span>
-                <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fvillageofthemonks.com%2F&layout=button&size=small&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </span>   
-
             <!-- Twitter Share Button -->
             <span>
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="Ireland, Kilkenny, Graiguenamanagh" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </span>  
 
-            <p>villageofthemonks.com 2018 by <a target="_blank" href="http://scottyzen.com">Scott Kennedy</a></p>
+            <p>VillageoftheMonks.com 2018 by <a target="_blank" href="http://scottyzen.com">Scott Kennedy</a></p>
 
         </div>
 

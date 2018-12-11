@@ -14,7 +14,7 @@ gulp.task('serve', function () {
     });
 
     gulp.watch('**/*.php').on('change', () => {
-        gulp.start('css')
+        // gulp.start('css')
         browserSync.reload()
     });
     gulp.watch('./css/**/*.css').on('change', () => {
@@ -22,7 +22,7 @@ gulp.task('serve', function () {
         browserSync.reload()
     });
     gulp.watch('./js/**/*.js').on('change', () => {
-        gulp.start('css')
+        // gulp.start('css')
         browserSync.reload()
     });
 });
@@ -46,13 +46,27 @@ gulp.task('default', ['htmlmin']);
 
 // TailwindCSS
 gulp.task('css', function () {
+    var weatherIcons = [];
+    for (var i = 0; i < 48; i++) {
+        weatherIcons = [...weatherIcons, `icon-${i}`]
+    }
+
     return gulp.src('css/style.css')
         .pipe(postcss([
             tailwindcss('./tailwind.js'),
             require('autoprefixer'),
         ]))
         .pipe(purgecss({
-            content: ['**/*.php', './js/**/*.js']
+            content: ['**/*.php', './js/**/*.js'],
+            whitelist: weatherIcons,
+            extractors: [{
+                extractor: class {
+                    static extract(content) {
+                        return content.match(/[A-z0-9-:\/]+/g) || []
+                    }
+                },
+                extensions: ['html', 'js', 'php']
+            }]
         }))
         .pipe(gulp.dest('build/'));
 });

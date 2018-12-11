@@ -33,8 +33,6 @@ $(function () {
     });
 
 
-
-
     //menu_dropdown
     $("#sights_dropdown").on("click", function () {
         $(".menu_dropdown").toggleClass('show_menu');
@@ -45,23 +43,17 @@ $(function () {
         $("#sights_dropdown").removeClass('is-active');
     })
 
-
-    $('#pages-expanded__button').on('click', function () {
-        $('.dropdown__link').toggleClass('dropdown__link--open')
-    });
-
-
-
     var instafeedHasExecuted = false;
+    var instagramSearch = document.querySelector('.instafeed').innerText;
 
     // Parallax
     var scrollLoop = function () {
         var xScroll = window.pageYOffset;
 
         // INSTAFEED
-        if (xScroll > 3000 && !instafeedHasExecuted) {
-            console.log('Load Instagram images...');
-            $(".instafeed").load("Instagram.php");
+        if (xScroll > 2000 && !instafeedHasExecuted) {
+            console.log(instagramSearch);
+            $(".instafeed").load("Instagram.php?name=" + instagramSearch);
             instafeedHasExecuted = true;
         }
 
@@ -264,3 +256,46 @@ if (hamburgers.length > 0) {
         }, false);
     });
 }
+
+// Check if webP is supported
+async function supportsWebp() {
+    if (!self.createImageBitmap) return false;
+
+    const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+    const blob = await fetch(webpData).then(r => r.blob());
+    return createImageBitmap(blob).then(() => true, () => false);
+}
+
+// Lazy images
+let lazyImages = document.querySelectorAll(".lazy");
+
+lazyImages.forEach(image => {
+    let bigImage = document.createElement("img");
+
+    bigImage.onload = function () {
+        image.src = this.src;
+    };
+
+    setTimeout(() => {
+        bigImage.src = [image.src.slice(0, -4), "_x2", image.src.slice(-4)].join("");
+        image.classList = "";
+    }, 50);
+});
+
+// Lazy Background images
+let lazyBackgroundImages = document.querySelectorAll(".lazyBackground");
+lazyBackgroundImages.forEach(image => {
+    setTimeout(() => {
+
+        if (supportsWebp()) {
+            var folder = image.style.backgroundImage.slice(0, 12);
+            var imageName = image.style.backgroundImage.slice(12, -6);
+
+            image.style.backgroundImage = [folder, 'webp/', imageName, '_x2', '.webp")'].join('') + ", " + image.style.backgroundImage;
+
+        } else {
+            image.style.backgroundImage = [image.style.backgroundImage.slice(0, -6), "_x2", image.style.backgroundImage.slice(-6)].join("") + ", " + image.style.backgroundImage;
+        }
+
+    }, 50);
+})

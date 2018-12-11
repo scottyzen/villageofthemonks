@@ -1,54 +1,54 @@
 footer
 	width: 100%
-	padding: 70px 20px 20px
+	padding: 70px 20px 0
 	+tablet
 		padding: 20px
+		padding-bottom: 0
 	font-size: .9em
-	background: url('https://scottyzen.sirv.com/Images/v/brush-strokes-dark.png') no-repeat top , url('https://scottyzen.sirv.com/Images/v/pattern-dark-bg.png')
+	background: url('https://scottyzen.sirv.com/Images/v/brush-strokes-dark.png') no-repeat top , url('../img/pattern-dark-bg.png')
 	background-size: 100% 220px, auto
-    color: darken($fontColor, 10%)
+	color: darken($fontColor, 10%)
 	.row
-		@extend .col-sm-12
-		padding: 20% 0 10%
+		padding: 18% 0 12%
 		.one, .two, .three
 			@extend .col-xs-12, .col-sm-4
+			hr 
+				border: none
+				height: 2px 
+				background: #121c20
 		h3
 			color: #ccc
 			font-family: 'festivo'
 			font-size: 1.375em
 		a
-			color: darken($fontColor, 50%)
+			color: #a1afb6
 			&:hover, &:active
 				color: $fontColor
 				font-family: 'Proxima Nova Bold'
 	.copyright
+		background-color: #141e22
 		width: 100%
+		box-shadow: ( -1700px 0 0 #141e22 ,-850px 0 0 #141e22, -250px 0 0 #141e22, 250px 0 0 #141e22, 850px 0 0 #141e22, 1700px 0 0 #141e22)
 		text-align: center
-		border-top: 2px solid #0E121A
 		display: flex
 		flex-wrap: wrap-reverse
 		align-items: center
-		padding: 20px 0
-		color: darken($fontColor, 50%)
+		padding: 18px 0 12px
+		color: darken($fontColor, 45%)
 		font-size: 1em
 		margin: 10px 0 0 0
-		+tablet
-			margin: 0 0 40px 0
 		justify-content: center
 		p
-			padding: 0 40px
+			padding: 0 0 0 60px
 			flex: 1
-			+tablet
-                padding: 0 0 0 40px
-                text-align: right
+			color: #80949c
+			text-align: right
 		a
 			color: #ccc
 			&:hover, &:active
 				color: $fontColor
 				font-family: 'Proxima Nova Bold'
-		span 
-			margin: 0 10px
-			margin-top: 20px
+		span
 			+tablet
 				width: auto
 

@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><?php echo ($title) ? $title.' | Village of the Monks' : 'Graiguenamanagh | Village of the Monks' ?></title>
-    <link rel="stylesheet" href="./build/style.css">
+    <title><?php echo ($title) ? $title.' | Village of the Monks' : 'Graignamanagh | Village of the Monks' ?></title>
+    <link rel="stylesheet" href="./build/style-min.css">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="description" content="<?php echo ($description) ? $description : 'Graiguenamanagh or Graignamanagh is a town in Kilkenny. Considered to be one of the most beautiful areas in the southeast of Ireland.' ?>" >
-    <meta name="keywords" content="Graiguenamanagh, Graignamanagh, river barrow, duiske abbey, Village of the Monks">
+    <meta name="keywords" content="Graiguenamanagh, Graignamanagh, river, barrow, abbey, Village, Monks, Kilkenny, Carlow, Tinnahinch, Castle, Brandon, Hill, Town, Books, Pubs, Ireland, Duiske">
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
