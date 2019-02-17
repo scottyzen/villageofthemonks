@@ -49,7 +49,7 @@
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="Ireland, Kilkenny, Graiguenamanagh" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </span>  
 
-            <p>VillageoftheMonks.com 2018 by <a target="_blank" href="http://scottyzen.com">Scott Kennedy</a></p>
+            <p>VillageoftheMonks.com 2019 by <a target="_blank" href="http://scottyzen.com">Scott Kennedy</a></p>
 
         </div>
 
