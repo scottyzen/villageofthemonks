@@ -57,6 +57,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>√
   <script src="./js/min/main-min.js"></script>
   <script>
         (function(i, s, o, g, r, a, m) {
