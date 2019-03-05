@@ -1,0 +1,53 @@
+.facts
+  height: 450px
+  ul
+    list-style-type: none
+    margin-top: 75px
+    background-color: $yellow
+    display: flex
+    flex-direction: column
+    li
+      height: 150px
+      padding-top: 50px
+      flex: 1
+      i
+        font-size: 50px
+        float: left
+        margin-left: 35px
+        color: darken($yellow, 35%)
+        height: 100%
+      p
+        float: left
+        text-align: left
+        padding: 5px 25px
+        color: darken($yellow, 35%)
+        small
+          color: darken($yellow, 25%)
+#weather
+  i
+    font-size: 65px
+
+
+
+/* smart phone horizontal mode only
+@media only screen and (max-width: 767px) and (min-width: 420px)
+  .facts
+    height: auto
+    margin-bottom: 10%
+    ul 
+      flex-direction: row
+      li  
+        padding-top: 3%
+        text-align: center
+        i  
+          margin-left: 0
+          height: 40%
+          width: 100%
+        p  
+          text-align: center
+          padding: 5% 0
+          width: 100%
+    #weather
+      i
+        font-size: 96px
+        padding-top: 18px

@@ -1,0 +1,80 @@
+// Smallest
+ul.instafeed
+  li
+    display: none
+  li:nth-child(-n+5)
+    display: block
+.intro
+  padding-top: 50px
+footer
+  .row
+    padding: 40% 0 0
+
+
+/* Custom, iPhone Retina
+@media only screen and (min-width: 320px)
+  .logo
+    margin: auto
+  .first-image
+    img
+      margin-top: 40px
+      margin-bottom: 20px
+  .green-river
+    margin-top: 0
+    background-size: cover
+  .image-gallery
+    ul
+      column-count: 2
+  ul.instafeed
+    column-count: 2
+    li
+      display: none
+    li:nth-child(-n+10)
+      display: block
+  .splash
+    margin: 300px 0 0
+    .row
+      padding-top: 100px
+      margin: 0
+      background-position: (top !important)
+
+
+/* Extra Small Devices, Phones
+@media only screen and (min-width: 480px)
+  ul.instafeed
+    column-count: 3
+    overflow: hidden
+    li 
+      display: block
+
+
+/* Small Devices, Tablets
+@media only screen and (min-width: 768px)
+  .logo
+    margin: inherit
+  .first-image
+    margin-top: -100px
+    img
+      margin-bottom: 200px
+  .green-river
+    margin-top: -250px
+    background-size: cover
+  .image-gallery
+    ul
+      column-count: 3
+  ul.instafeed
+    column-count: 4
+  .splash
+    margin: 100px 0
+    .row
+      margin: 120px 0 0
+
+/* Medium Devices, Desktops
+@media only screen and (min-width: 1025px)
+  .first-image
+    margin-top: -200px
+  .green-river
+    margin-top: -250px
+    background-size: 100% 100%
+/* Large Devices, Wide Screens
+// @media only screen and (min-width: 1200px)

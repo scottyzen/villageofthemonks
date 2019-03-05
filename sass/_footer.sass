@@ -1,0 +1,71 @@
+footer
+	width: 100%
+	padding: 70px 20px 0
+	+tablet
+		padding: 20px
+		padding-bottom: 0
+	font-size: .9em
+	background: url('https://scottyzen.sirv.com/Images/v/brush-strokes-dark.png') no-repeat top , url('../img/pattern-dark-bg.png')
+	background-size: 100% 220px, auto
+	color: darken($fontColor, 10%)
+	.row
+		padding: 18% 0 12%
+		.one, .two, .three
+			@extend .col-xs-12, .col-sm-4
+			hr 
+				border: none
+				height: 2px 
+				background: #121c20
+		h3
+			color: #ccc
+			font-family: 'festivo'
+			font-size: 1.375em
+		a
+			color: #a1afb6
+			&:hover, &:active
+				color: $fontColor
+				font-family: 'Proxima Nova Bold'
+	.copyright
+		background-color: #141e22
+		width: 100%
+		box-shadow: ( -1700px 0 0 #141e22 ,-850px 0 0 #141e22, -250px 0 0 #141e22, 250px 0 0 #141e22, 850px 0 0 #141e22, 1700px 0 0 #141e22)
+		text-align: center
+		display: flex
+		flex-wrap: wrap-reverse
+		align-items: center
+		padding: 18px 0 12px
+		color: darken($fontColor, 45%)
+		font-size: 1em
+		margin: 10px 0 0 0
+		justify-content: center
+		p
+			padding: 0 0 0 60px
+			flex: 1
+			color: #80949c
+			text-align: right
+		a
+			color: #ccc
+			&:hover, &:active
+				color: $fontColor
+				font-family: 'Proxima Nova Bold'
+		span
+			+tablet
+				width: auto
+
+		.logo-footer
+			img
+				margin: 20px auto
+				width: 45px
+		.three
+			text-align: center
+			ul
+				font-size: 1.5em
+				li
+					display: inline-block
+					margin: 5px
+
+
+/* smart phone horizontal mode only
+@media only screen and (max-width: 780px) and (min-width: 420px)
+	.bottom-brush-stroke
+		height: (338px !important)
