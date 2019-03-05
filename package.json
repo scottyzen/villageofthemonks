@@ -1,0 +1,28 @@
+{
+  "name": "graiguenamanagh",
+  "version": "1.0.0",
+  "description": "Website / Wiki about Graiguenamanagh",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Kennedy",
+  "license": "ISC",
+  "devDependencies": {
+    "@aquafadas/gulp-php-minify": "^0.3.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^3.0.0",
+    "tailwindcss": "^0.7.2"
+  },
+  "dependencies": {
+    "gulp-purgecss": "^1.1.1",
+    "imagemin": "^5.3.1"
+  }
+}
