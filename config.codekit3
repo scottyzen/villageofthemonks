@@ -1226,7 +1226,7 @@
 		},
 	"\/img\/main-header-large.jpg": {
 		"ft": 16384,
-		"iS": 338671,
+		"iS": 2391840,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/main-header-large_x2.jpg",
@@ -1640,16 +1640,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/js\/min\/jquery-3.2.1.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/jquery.simpleWeather.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/jquery.simpleWeather.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -3638,19 +3628,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/_weather.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_weather.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/bootstrap\/_alerts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -5032,12 +5009,6 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/js\/jquery-3.2.1.min.js",
 			"position": 0,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/jquery.simpleWeather.min.js",
-			"position": 1,
 			"type": 0
 			}
 		]

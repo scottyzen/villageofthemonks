@@ -19,7 +19,14 @@
         "gulp-ruby-sass": "^2.1.1",
         "gulp-sass": "^3.2.1",
         "gulp-uglify": "^3.0.0",
-        "tailwindcss": "^0.7.2"
+        "tailwindcss": "^0.7.2",
+        "no-case": ">=2.3.2",
+        "lodash": ">=4.17.11",
+        "superagent": ">=3.7.0",
+        "deep-extend": ">=0.5.1",
+        "randomatic": ">=3.0.0",
+        "minimatch": ">=3.0.2",
+        "extend": ">=3.0.2"
     },
     "dependencies": {
         "gulp-purgecss": "^1.1.1",

@@ -1,4 +1,18 @@
 $(function () {
+
+    let url = 'http://api.openweathermap.org/data/2.5/weather?id=2963905&units=metric&APPID=';
+    let key = 'e8368e8bc7f7b7aff54fd8cb7a184839';
+
+    axios.get(url + key).then(res => {
+
+        let tempature = res.data.main.temp;
+        let description = res.data.weather[0].description;
+        $("#weather").html(
+            `${description}<br><small>${tempature}°C </small>`
+        );
+    })
+
+
     // Determine if an element is in the visible viewport
     $.fn.isInViewport = function () {
         // check if element exists
@@ -14,23 +28,6 @@ $(function () {
 
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
-
-    // weather
-    $.simpleWeather({
-        unit: "c",
-        woeid: "561049", //Graiguenamanagh
-        success: function (weather) {
-            html = `<i class="icon-${weather.code}"></i><p>Weather<br><small>${
-        weather.currently
-      } ${weather.temp}&deg;${weather.units.temp}</small></p>`;
-            $("#weather").html(html);
-        },
-        error: function (error) {
-            $("#weather").html(
-                '<i class="fa fa-cloud" aria-hidden="true"></i><p>Weather<br><small>Breezy 8°C </small></p>'
-            );
-        }
-    });
 
 
     //menu_dropdown
