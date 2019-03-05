@@ -6,29 +6,27 @@ const postcss = require('gulp-postcss');
 const tailwindcss = require('tailwindcss');
 const purgecss = require('gulp-purgecss');
 
-gulp.task('serve', function () {
-    connect.server({}, function () {
+// BrowserSync Reload
+function browserSyncReload(done) {
+    browsersync.reload();
+    done();
+}
+
+gulp.task('serve', () => {
+    connect.server({}, () => {
         browserSync({
             proxy: '127.0.0.1:8000'
         });
     });
 
-    gulp.watch('**/*.php').on('change', () => {
-        // gulp.start('css')
-        browserSync.reload()
-    });
-    gulp.watch('./css/**/*.css').on('change', () => {
-        gulp.start('css')
-        browserSync.reload()
-    });
-    gulp.watch('./js/**/*.js').on('change', () => {
-        // gulp.start('css')
-        browserSync.reload()
-    });
+    gulp.watch("**/*.php", gulp.parallel([browserSyncReload]))
+    gulp.watch("./css/**/*.css", gulp.parallel(['css', browserSyncReload]))
+    gulp.watch("./js/**/*.js", gulp.parallel([browserSyncReload]))
 });
 
+
 // Compress all PHP/HTML files
-gulp.task('htmlmin', function () {
+gulp.task('htmlmin', () => {
     return gulp
         .src(['./*.html', './*.php', '!dist/**/*', '!node_modules/**/*'])
         .pipe(
@@ -42,15 +40,10 @@ gulp.task('htmlmin', function () {
 });
 
 
-gulp.task('default', ['htmlmin']);
+gulp.task('default', gulp.series(["htmlmin"]));
 
 // TailwindCSS
-gulp.task('css', function () {
-    var weatherIcons = [];
-    for (var i = 0; i < 48; i++) {
-        weatherIcons = [...weatherIcons, `icon-${i}`]
-    }
-
+gulp.task('css', () => {
     return gulp.src('css/style.css')
         .pipe(postcss([
             tailwindcss('./tailwind.js'),
@@ -58,7 +51,6 @@ gulp.task('css', function () {
         ]))
         .pipe(purgecss({
             content: ['**/*.php', './js/**/*.js'],
-            whitelist: weatherIcons,
             extractors: [{
                 extractor: class {
                     static extract(content) {
