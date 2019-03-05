@@ -2,9 +2,12 @@
 /node_modules
 /PSD
 /uploads
+/.sass-cache
+
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
