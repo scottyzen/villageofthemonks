@@ -12,7 +12,6 @@ $(function () {
         );
     })
 
-
     // Determine if an element is in the visible viewport
     $.fn.isInViewport = function () {
         // check if element exists
@@ -29,7 +28,6 @@ $(function () {
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
 
-
     //menu_dropdown
     $("#sights_dropdown").on("click", function () {
         $(".menu_dropdown").toggleClass('show_menu');
@@ -42,6 +40,7 @@ $(function () {
 
     var instafeedHasExecuted = false;
     var instagramSearch = document.querySelector('.instafeed').innerText;
+    $(".instafeed").load("Instagram.php?name=" + instagramSearch);
 
     // Parallax
     var scrollLoop = function () {
@@ -49,7 +48,7 @@ $(function () {
 
         // INSTAFEED
         if (xScroll > 2000 && !instafeedHasExecuted) {
-            console.log(instagramSearch);
+            // console.log(instagramSearch);
             $(".instafeed").load("Instagram.php?name=" + instagramSearch);
             instafeedHasExecuted = true;
         }

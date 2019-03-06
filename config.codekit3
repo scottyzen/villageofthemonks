@@ -394,6 +394,14 @@
 		"oAP": "\/.sass-cache\/c3eef93bbb71a044ad3bd976626f7fb8f55eae6d\/font-awesome.scssc",
 		"oF": 0
 		},
+	"\/.vscode\/settings.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/.vscode\/settings-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1634,16 +1642,6 @@
 		"oAP": "\/Instagram.php",
 		"oF": 0
 		},
-	"\/js\/jquery-3.2.1.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/jquery-3.2.1.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/main.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1654,41 +1652,11 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/js\/min\/jquery-3.1.1.min-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/min\/jquery-3.1.1.min-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/jquery-3.2.1.min-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/min\/jquery-3.2.1.min-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/jquery.simpleWeather.min-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/min\/jquery.simpleWeather.min-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/min\/main-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/js\/min\/min\/main-min-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -1729,6 +1697,24 @@
 		"oA": 2,
 		"oAP": "\/PSD\/main.psd",
 		"oF": 0
+		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/riverbarrow.php": {
 		"cB": 0,
@@ -3628,6 +3614,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/_weather.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_weather.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/bootstrap\/_alerts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -4707,19 +4706,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/scss\/font-awesome.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/sass\/css\/font-awesome.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/style.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -4729,7 +4715,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/style.css",
-		"oF": 0,
+		"oF": 2,
 		"oS": 3,
 		"uL": 1
 		},
@@ -5004,14 +4990,6 @@
 "hooks": [
 	],
 "manualImportLinks": {
-	"\/js\/main.js": [
-		{
-			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/js\/jquery-3.2.1.min.js",
-			"position": 0,
-			"type": 0
-			}
-		]
 	},
 "projectAttributes": {
 	"creationDate": 509974958,

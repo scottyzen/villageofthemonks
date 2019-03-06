@@ -52,8 +52,6 @@
               </li>
               <li>
               <i>
-                    <!-- <svg width="50" height="50" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1444 548l-292 292v824q0 46-33 79t-79 33-79-33-33-79v-384h-64v384q0 46-33 79t-79 33-79-33-33-79v-824l-292-292q-28-28-28-68t28-68q29-28 68.5-28t67.5 28l228 228h368l228-228q28-28 68-28t68 28q28 29 28 68.5t-28 67.5zm-324-164q0 93-65.5 158.5t-158.5 65.5-158.5-65.5-65.5-158.5 65.5-158.5 158.5-65.5 158.5 65.5 65.5 158.5z" fill="#79631A"/></svg> -->
-
                     <svg width="140" height="140" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
                         <path d="M524.183,297.065c-15.985-19.893-36.265-32.691-60.815-38.399c7.81-11.993,11.704-25.126,11.704-39.399
                             c0-20.177-7.139-37.401-21.409-51.678c-14.273-14.272-31.498-21.411-51.675-21.411c-18.271,0-34.071,5.901-47.39,17.703
@@ -94,7 +92,8 @@
         </div>
       </div>
     </div>
-<br><br>
+    <br>
+    <br>
     <div class="splash">
       <div class="container">
 
@@ -167,8 +166,8 @@
         <p class="tooltip"> <i class="fa fa-instagram fa-lg" aria-hidden="true"></i> Tag your photos with <strong>#Graiguenamanagh</strong> to see them displayed here. Your account must not be set to private.</p>
         <i class="fa fa-info-circle" aria-hidden="true"></i>
       </div>
-    </div>
-  </div><!-- End of Wrapper -->
+    </div><!-- End of Instagram -->
 
+  </div><!-- End of Wrapper -->
 
 <?php include '_footer.php'; ?>

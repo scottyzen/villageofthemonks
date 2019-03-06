@@ -8,7 +8,7 @@ const purgecss = require('gulp-purgecss');
 
 // BrowserSync Reload
 function browserSyncReload(done) {
-    browsersync.reload();
+    browserSync.reload();
     done();
 }
 
