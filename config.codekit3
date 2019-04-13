@@ -833,13 +833,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/bridge-line-art.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/bridge-line-art.webp",
-		"oF": 0
-		},
 	"\/img\/brush-strokes-dark.png": {
 		"ft": 32768,
 		"iS": 170118,
@@ -1203,13 +1196,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/logo.min.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/logo.min.webp",
-		"oF": 0
-		},
 	"\/img\/logo.png": {
 		"ft": 32768,
 		"iS": 3293,
@@ -1297,13 +1283,6 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
-		},
-	"\/img\/pattern-dark-bg.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/pattern-dark-bg.webp",
-		"oF": 0
 		},
 	"\/img\/river-barrow-air.jpg": {
 		"ft": 16384,
@@ -1558,76 +1537,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/webp\/brandon-splash.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/brandon-splash.webp",
-		"oF": 0
-		},
-	"\/img\/webp\/brandon-splash_x2.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/brandon-splash_x2.webp",
-		"oF": 0
-		},
-	"\/img\/webp\/duiske-splash.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/duiske-splash.webp",
-		"oF": 0
-		},
-	"\/img\/webp\/duiske-splash_x2.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/duiske-splash_x2.webp",
-		"oF": 0
-		},
-	"\/img\/webp\/green-river.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/green-river.webp",
-		"oF": 0
-		},
-	"\/img\/webp\/green-river_x2.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/green-river_x2.webp",
-		"oF": 0
-		},
-	"\/img\/webp\/river-splash.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/river-splash.webp",
-		"oF": 0
-		},
-	"\/img\/webp\/river-splash_x2.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/river-splash_x2.webp",
-		"oF": 0
-		},
-	"\/img\/webp\/tinnahinch-castle-splash.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/tinnahinch-castle-splash.webp",
-		"oF": 0
-		},
-	"\/img\/webp\/tinnahinch-castle-splash_x2.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/img\/webp\/tinnahinch-castle-splash_x2.webp",
-		"oF": 0
-		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1641,6 +1550,16 @@
 		"oA": 2,
 		"oAP": "\/Instagram.php",
 		"oF": 0
+		},
+	"\/js\/jquery-3.4.0.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/js\/min\/jquery-3.4.0.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/js\/main.js": {
 		"ft": 64,
@@ -4990,6 +4909,14 @@
 "hooks": [
 	],
 "manualImportLinks": {
+	"\/js\/main.js": [
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/js\/jquery-3.4.0.min.js",
+			"position": 0,
+			"type": 0
+			}
+		]
 	},
 "projectAttributes": {
 	"creationDate": 509974958,
