@@ -253,15 +253,6 @@ if (hamburgers.length > 0) {
     });
 }
 
-// Check if webP is supported
-async function supportsWebp() {
-    if (!self.createImageBitmap) return false;
-
-    const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
-    const blob = await fetch(webpData).then(r => r.blob());
-    return createImageBitmap(blob).then(() => true, () => false);
-}
-
 // Lazy images
 let lazyImages = document.querySelectorAll(".lazy");
 
@@ -282,16 +273,6 @@ lazyImages.forEach(image => {
 let lazyBackgroundImages = document.querySelectorAll(".lazyBackground");
 lazyBackgroundImages.forEach(image => {
     setTimeout(() => {
-
-        if (supportsWebp()) {
-            var folder = image.style.backgroundImage.slice(0, 12);
-            var imageName = image.style.backgroundImage.slice(12, -6);
-
-            image.style.backgroundImage = [folder, 'webp/', imageName, '_x2', '.webp")'].join('') + ", " + image.style.backgroundImage;
-
-        } else {
-            image.style.backgroundImage = [image.style.backgroundImage.slice(0, -6), "_x2", image.style.backgroundImage.slice(-6)].join("") + ", " + image.style.backgroundImage;
-        }
-
+        image.style.backgroundImage = [image.style.backgroundImage.slice(0, -6), "_x2", image.style.backgroundImage.slice(-6)].join("") + ", " + image.style.backgroundImage;
     }, 50);
 })
