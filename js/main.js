@@ -38,20 +38,9 @@ $(function () {
         $("#sights_dropdown").removeClass('is-active');
     })
 
-    var instafeedHasExecuted = false;
-    var instagramSearch = document.querySelector('.instafeed').innerText;
-    $(".instafeed").load("Instagram.php?name=" + instagramSearch);
-
     // Parallax
     var scrollLoop = function () {
         var xScroll = window.pageYOffset;
-
-        // INSTAFEED
-        if (xScroll > 2000 && !instafeedHasExecuted) {
-            // console.log(instagramSearch);
-            $(".instafeed").load("Instagram.php?name=" + instagramSearch);
-            instafeedHasExecuted = true;
-        }
 
         // Only for screens larger than 768px
         if ($(window).width() > 767) {
